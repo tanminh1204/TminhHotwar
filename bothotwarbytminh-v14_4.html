@@ -1,0 +1,3825 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BotHotWar v14_4">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>bothotwarbytminh v14_4 • Hyper Speed</title>
+    <link id="dynamicManifest" rel="manifest" href="blob:null/fb0faf2b-9c4d-4c7c-95b1-a22a3a48d01b">
+    <link id="dynamicIcon" rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20192%20192%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230ea5e9%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ec4899%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%22192%22%20height%3D%22192%22%20rx%3D%2242%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2296%22%20y%3D%22116%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2268%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3Ev13%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fsvg%3E">
+    <link id="dynamicAppleIcon" rel="apple-touch-icon" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20192%20192%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230ea5e9%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ec4899%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%22192%22%20height%3D%22192%22%20rx%3D%2242%22%20fill%3D%22url(%23g)%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2296%22%20y%3D%22116%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2268%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3Ev13%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fsvg%3E">
+    <style>
+        :root {
+            --bg-grad: radial-gradient(circle at top left, #1e293b 0%, #0f172a 48%, #090d16 100%);
+            --card-bg: rgba(15, 23, 42, 0.94);
+            --panel-bg: rgba(30, 41, 59, 0.72);
+            --panel-border: rgba(148, 163, 184, 0.16);
+            --input-bg: rgba(15, 23, 42, 0.94);
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --accent: #38bdf8;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --purple: #a855f7;
+            --radius-lg: 16px;
+            --radius-md: 10px;
+            --radius-sm: 7px;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-grad);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 12px;
+        }
+
+        .app-shell {
+            background: var(--card-bg);
+            border: 1px solid rgba(56, 189, 248, 0.24);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.55);
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 600px;
+            padding: 16px;
+        }
+
+        /* Header & PWA Install Bar */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--panel-border);
+        }
+        .brand-wrap h2 {
+            margin: 0;
+            font-size: 19px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .brand-sub {
+            font-size: 11px;
+            color: var(--text-sub);
+            margin-top: 2px;
+        }
+        .install-actions {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .btn-install {
+            background: linear-gradient(135deg, #0ea5e9, #6366f1);
+            color: #fff;
+            border: none;
+            padding: 6px 11px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .btn-download-offline {
+            background: rgba(30, 41, 59, 0.95);
+            color: #cbd5e1;
+            border: 1px solid rgba(148, 163, 184, 0.28);
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
+            background: rgba(15, 23, 42, 0.9);
+            padding: 4px;
+            border-radius: 11px;
+            border: 1px solid var(--panel-border);
+            margin-bottom: 12px;
+        }
+        .nav-tabs.has-admin {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .tab-btn {
+            background: transparent;
+            color: var(--text-sub);
+            border: none;
+            padding: 8px 5px;
+            border-radius: 8px;
+            font-size: 11.5px;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center;
+        }
+        .tab-btn.active {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.24), rgba(99, 102, 241, 0.26));
+            color: #fff;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+        }
+        .tab-pane { display: none; }
+        .tab-pane.active { display: block; }
+
+        /* Panels & Inputs */
+        .panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--radius-md);
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+        .panel-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 12.5px;
+            font-weight: 700;
+            color: #e2e8f0;
+            margin-bottom: 7px;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+            color: #cbd5e1;
+            font-size: 12px;
+        }
+        .optional { font-size: 11px; color: var(--text-sub); font-weight: 400; }
+
+        input[type="file"], input[type="text"], input[type="number"], input[type="datetime-local"], textarea, select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid rgba(148, 163, 184, 0.26);
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            outline: none;
+            background: var(--input-bg);
+            color: #f8fafc;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--accent);
+        }
+        textarea { height: 96px; resize: vertical; line-height: 1.42; }
+
+        .row-group { display: flex; gap: 7px; align-items: center; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 7px; }
+
+        /* Buttons */
+        .btn {
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: 8px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+        .btn-green { background: #16a34a; color: #fff; }
+        .btn-blue { background: #0284c7; color: #fff; }
+        .btn-purple { background: #7e22ce; color: #fff; }
+        .btn-mini {
+            background: rgba(15, 23, 42, 0.9);
+            color: #cbd5e1;
+            border: 1px solid rgba(148, 163, 184, 0.26);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn-mini:hover { background: rgba(51, 65, 85, 0.95); color: #fff; border-color: var(--accent); }
+        .btn-mini.active-chip {
+            background: rgba(14, 165, 233, 0.25);
+            border-color: #38bdf8;
+            color: #7dd3fc;
+        }
+        .btn-mini.danger { color: #fca5a5; border-color: rgba(239, 68, 68, 0.35); }
+
+        .btn-send {
+            width: 100%;
+            background: linear-gradient(135deg, #ef4444, #dc2626, #b91c1c);
+            color: #fff;
+            border: none;
+            padding: 13px;
+            font-size: 14.5px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.36);
+        }
+        .btn-send:disabled { opacity: 0.55; cursor: not-allowed; }
+
+        .btn-stop {
+            width: 100%;
+            background: #475569;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 13px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            margin-top: 7px;
+            display: none;
+        }
+
+        /* Bot & Group Lists */
+        .scroll-box {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            max-height: 210px;
+            overflow-y: auto;
+            padding-right: 3px;
+        }
+        .item-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 7px;
+            background: rgba(15, 23, 42, 0.88);
+            padding: 7px 9px;
+            border-radius: 8px;
+            border: 1px solid rgba(148, 163, 184, 0.16);
+        }
+        .item-card.selected {
+            border-color: rgba(56, 189, 248, 0.55);
+            background: rgba(14, 165, 233, 0.12);
+        }
+        .item-card label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+            cursor: pointer;
+            font-weight: 500;
+            flex: 1;
+            overflow: hidden;
+        }
+        .item-card input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--accent);
+            flex-shrink: 0;
+        }
+        .meta-col {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .meta-title {
+            font-weight: 700;
+            color: #f8fafc;
+            font-size: 12.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .meta-sub {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 11px;
+            color: var(--text-sub);
+        }
+        .badge {
+            font-size: 10.5px;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 999px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .badge-unknown { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; }
+        .badge-checking { background: rgba(245, 158, 11, 0.22); color: #fcd34d; }
+        .badge-live { background: rgba(34, 197, 94, 0.22); color: #86efac; }
+        .badge-dead { background: rgba(239, 68, 68, 0.22); color: #fca5a5; }
+
+        .remove-btn {
+            color: #f87171;
+            cursor: pointer;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        /* Starter Users Drawer inside Bot Card */
+        .starters-drawer {
+            margin-top: 6px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            background: rgba(2, 6, 23, 0.78);
+            border: 1px dashed rgba(56, 189, 248, 0.35);
+            font-size: 11.5px;
+        }
+        .starter-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+        }
+        .starter-row:last-child { border-bottom: none; }
+        .starter-uid {
+            font-family: monospace;
+            color: #38bdf8;
+            font-weight: 700;
+        }
+
+        /* Speed Box */
+        .speed-box {
+            background: rgba(15, 23, 42, 0.82);
+            border: 1px solid rgba(56, 189, 248, 0.28);
+            border-radius: 9px;
+            padding: 10px;
+            margin-top: 6px;
+        }
+        .speed-chip-bar {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .speed-unit-hint {
+            font-size: 11px;
+            color: #38bdf8;
+            margin-top: 3px;
+            font-family: monospace;
+        }
+
+        /* Saved Templates */
+        .template-card {
+            background: rgba(15, 23, 42, 0.88);
+            border: 1px solid rgba(168, 85, 247, 0.28);
+            border-radius: 8px;
+            padding: 8px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+        .template-preview {
+            font-size: 11.5px;
+            color: #cbd5e1;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Status & Logs */
+        #status {
+            margin-top: 10px;
+            padding: 9px;
+            border-radius: 8px;
+            display: none;
+            text-align: center;
+            font-size: 12.5px;
+            font-weight: 700;
+        }
+        .success { background: rgba(34, 197, 94, 0.18); color: #86efac; border: 1px solid rgba(34, 197, 94, 0.4); }
+        .error { background: rgba(239, 68, 68, 0.18); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
+        .loading { background: rgba(245, 158, 11, 0.18); color: #fde68a; border: 1px solid rgba(245, 158, 11, 0.4); }
+
+        .log-stats {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            font-size: 11px;
+            margin-bottom: 7px;
+        }
+        .stat-pill {
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-weight: 700;
+            background: rgba(148, 163, 184, 0.18);
+            color: #e2e8f0;
+        }
+        .stat-ok { background: rgba(34, 197, 94, 0.2); color: #86efac; }
+        .stat-err { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+        .stat-retry { background: rgba(245, 158, 11, 0.2); color: #fcd34d; }
+
+        .log-box {
+            max-height: 175px;
+            overflow-y: auto;
+            background: #020617;
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 8px;
+            padding: 8px 10px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .log-entry {
+            line-height: 1.38;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 2px;
+            word-break: break-word;
+        }
+        .log-ok { color: #4ade80; }
+        .log-err { color: #f87171; }
+        .log-retry { color: #facc15; }
+        .log-info { color: #38bdf8; }
+
+        .txt-mode-info {
+            font-size: 11.5px;
+            color: #7dd3fc;
+            background: rgba(14, 165, 233, 0.14);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 7px 10px;
+            border-radius: 7px;
+            margin-top: 6px;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Modal hướng dẫn cài đặt về máy */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 6, 23, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            z-index: 9999;
+        }
+        .modal-card {
+            background: #0f172a;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            border-radius: 14px;
+            max-width: 440px;
+            width: 100%;
+            padding: 18px;
+            color: #f1f5f9;
+        }
+        .modal-card h3 { margin-top: 0; color: #38bdf8; font-size: 16px; }
+        .modal-step {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 8px;
+            padding: 9px 11px;
+            margin-bottom: 8px;
+            font-size: 12.5px;
+            line-height: 1.45;
+        }
+    
+        .btn-account-pill {
+            background: rgba(168, 85, 247, 0.22);
+            color: #e9d5ff;
+            border: 1px solid rgba(168, 85, 247, 0.45);
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .auth-overlay {
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(circle at top, rgba(30, 41, 59, 0.96), rgba(2, 6, 23, 0.98));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            z-index: 10000;
+        }
+        .auth-card {
+            background: rgba(15, 23, 42, 0.97);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            box-shadow: 0 22px 50px rgba(0, 0, 0, 0.65);
+            border-radius: 18px;
+            width: 100%;
+            max-width: 410px;
+            padding: 20px;
+        }
+        .auth-header {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .auth-header h2 {
+            margin: 0;
+            font-size: 21px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #38bdf8, #a855f7, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .auth-mode-switch {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            background: rgba(2, 6, 23, 0.85);
+            padding: 4px;
+            border-radius: 10px;
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            margin-bottom: 14px;
+        }
+        .auth-mode-btn {
+            background: transparent;
+            color: #94a3b8;
+            border: none;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 12.5px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .auth-mode-btn.active {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.25), rgba(168, 85, 247, 0.25));
+            color: #fff;
+            border: 1px solid rgba(56, 189, 248, 0.45);
+        }
+        .auth-field { margin-bottom: 10px; }
+        .auth-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #0ea5e9, #7e22ce);
+            color: #fff;
+            border: none;
+            padding: 11px;
+            border-radius: 10px;
+            font-size: 13.5px;
+            font-weight: 800;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+        .auth-guest-btn {
+            width: 100%;
+            background: rgba(30, 41, 59, 0.9);
+            color: #cbd5e1;
+            border: 1px solid rgba(148, 163, 184, 0.28);
+            padding: 9px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .auth-msg {
+            margin-top: 10px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            display: none;
+            text-align: center;
+        }
+        .user-acc-box {
+            background: rgba(30, 41, 59, 0.78);
+            border: 1px solid rgba(168, 85, 247, 0.35);
+            border-radius: 10px;
+            padding: 11px 12px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+    
+        .btn-menu-hamburger {
+            background: rgba(30, 41, 59, 0.95);
+            color: #f8fafc;
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .btn-menu-hamburger:hover {
+            border-color: #38bdf8;
+            background: rgba(51, 65, 85, 0.95);
+        }
+        .top-drawer-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(2, 6, 23, 0.72);
+            display: none;
+            justify-content: flex-end;
+            z-index: 10010;
+        }
+        .top-drawer-panel {
+            background: #0f172a;
+            border-left: 1px solid rgba(56, 189, 248, 0.35);
+            width: 100%;
+            max-width: 340px;
+            height: 100%;
+            padding: 18px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+            box-shadow: -12px 0 36px rgba(0, 0, 0, 0.65);
+        }
+        .drawer-item-btn {
+            width: 100%;
+            text-align: left;
+            background: rgba(30, 41, 59, 0.85);
+            color: #f1f5f9;
+            border: 1px solid rgba(148, 163, 184, 0.22);
+            border-radius: 10px;
+            padding: 11px 12px;
+            font-size: 12.5px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .drawer-item-btn:hover {
+            border-color: #38bdf8;
+            background: rgba(51, 65, 85, 0.9);
+        }
+        .otp-chip-box {
+            background: rgba(14, 165, 233, 0.14);
+            border: 1px dashed rgba(56, 189, 248, 0.5);
+            border-radius: 9px;
+            padding: 8px 10px;
+            font-size: 12px;
+            color: #bae6fd;
+            margin-top: 8px;
+        }
+        .otp-code-highlight {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 15px;
+            font-weight: 800;
+            color: #4ade80;
+            letter-spacing: 2px;
+        }
+
+    
+
+        .admin-stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 7px;
+            margin-bottom: 10px;
+        }
+        .admin-stat-card {
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 9px;
+            padding: 9px;
+            text-align: center;
+        }
+        .admin-stat-num {
+            font-size: 16px;
+            font-weight: 800;
+            color: #38bdf8;
+        }
+        .admin-stat-label {
+            font-size: 11px;
+            color: #94a3b8;
+            margin-top: 2px;
+        }
+        .admin-acc-card {
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(148, 163, 184, 0.22);
+            border-radius: 10px;
+            padding: 10px 11px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .admin-acc-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .admin-acc-meta {
+            font-size: 11.5px;
+            color: #cbd5e1;
+            line-height: 1.45;
+        }
+
+
+        .btn-bell-top {
+            background: rgba(245, 158, 11, 0.16);
+            color: #fde68a;
+            border: 1px solid rgba(245, 158, 11, 0.42);
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            font-size: 15px;
+            font-weight: 800;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-shrink: 0;
+        }
+        .btn-bell-top:hover {
+            border-color: #fbbf24;
+            background: rgba(245, 158, 11, 0.28);
+        }
+        .bell-badge-dot {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            min-width: 16px;
+            height: 16px;
+            padding: 0 4px;
+            border-radius: 999px;
+            background: #ef4444;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        .announce-card {
+            background: rgba(30, 41, 59, 0.88);
+            border: 1px solid rgba(56, 189, 248, 0.24);
+            border-radius: 10px;
+            padding: 10px 11px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .announce-card.unread {
+            border-color: rgba(245, 158, 11, 0.55);
+            background: rgba(245, 158, 11, 0.08);
+        }
+        .announce-title {
+            font-size: 13px;
+            font-weight: 800;
+            color: #f8fafc;
+        }
+        .announce-body {
+            font-size: 12px;
+            color: #cbd5e1;
+            line-height: 1.45;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .announce-meta {
+            font-size: 10.5px;
+            color: #94a3b8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<!-- MÀN HÌNH ĐĂNG NHẬP / ĐĂNG KÝ TÀI KHOẢN -->
+<div id="authGateModal" class="auth-overlay" style="display: none;">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h2>bothotwarbytminh v14_4</h2>
+            <div class="brand-sub">Đăng nhập hoặc tạo tài khoản để tách riêng Bot, Nhóm &amp; Ngôn Treo</div>
+        </div>
+
+        <div class="auth-mode-switch">
+            <button type="button" id="modeLoginBtn" class="auth-mode-btn active" onclick="setAuthMode('login')">🔐 Đăng nhập</button>
+            <button type="button" id="modeRegisterBtn" class="auth-mode-btn" onclick="setAuthMode('register')">✨ Đăng ký</button>
+        </div>
+
+        <form id="authForm" onsubmit="handleAuthSubmit(event)">
+            <div class="auth-field">
+                <label for="authUsername">Tên tài khoản (Username)</label>
+                <input type="text" id="authUsername" placeholder="VD: minh_v11" autocomplete="username" required="">
+            </div>
+
+            <div id="authDisplayNameWrap" class="auth-field" style="display: none;">
+                <label for="authDisplayName">Tên hiển thị <span class="optional">(Tuỳ chọn)</span></label>
+                <input type="text" id="authDisplayName" placeholder="VD: Minh">
+            </div>
+
+            <div class="auth-field">
+                <label for="authPassword">Mật khẩu</label>
+                <input type="password" id="authPassword" placeholder="Nhập mật khẩu (tối thiểu 4 ký tự)" autocomplete="current-password" required="">
+            </div>
+
+            <div id="authConfirmWrap" class="auth-field" style="display: none;">
+                <label for="authConfirmPassword">Nhập lại mật khẩu</label>
+                <input type="password" id="authConfirmPassword" placeholder="Xác nhận lại mật khẩu" autocomplete="new-password">
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px; font-size:11.5px; color:#cbd5e1;">
+                <label style="display:inline-flex; align-items:center; gap:5px; margin:0; font-weight:500; cursor:pointer;">
+                    <input type="checkbox" id="rememberSessionCheck" checked="" style="width:auto;"> Tự đăng nhập lần sau
+                </label>
+                <span id="savedAccountsQuickCount" style="color:#38bdf8;"></span>
+            </div>
+
+            <button type="submit" id="authSubmitBtn" class="auth-submit">🔐 Đăng nhập ngay</button>
+        </form>
+
+
+
+        <div id="authMessageBox" class="auth-msg"></div>
+    </div>
+</div>
+
+<!-- MODAL THÔNG TIN TÀI KHOẢN / ĐỔI ACC / ĐĂNG XUẤT -->
+<div id="accountInfoModal" class="modal-backdrop" onclick="if(event.target===this) closeAccountModal()">
+    <div class="modal-card">
+        <h3>👤 Thông tin Tài khoản</h3>
+        <div id="accountSummaryContent" class="modal-step"></div>
+        <div id="accountSwitcherList" style="margin-bottom: 10px;"></div>
+        <div style="display: flex; gap: 7px; flex-wrap: wrap; justify-content: flex-end;">
+            <button type="button" class="btn btn-blue" onclick="showLoginScreenFromModal()">➕ Đăng nhập / Đăng ký acc khác</button>
+            <button type="button" class="btn-mini danger" onclick="logoutCurrentAccount()">🚪 Đăng xuất</button>
+            <button type="button" class="btn-mini" onclick="closeAccountModal()">Đóng</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- MENU 3 GẠCH GÓC TRÊN -->
+<div id="topMenuDrawer" class="top-drawer-backdrop" onclick="if(event.target===this) closeTopMenuDrawer()" style="display: none;">
+    <div class="top-drawer-panel">
+        <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(148,163,184,0.2); padding-bottom:10px;">
+            <div>
+                <div style="font-size:15px; font-weight:800; color:#38bdf8;">☰ Menu Điều Khiển</div>
+                <div id="drawerAccountSubtitle" style="font-size:11px; color:#94a3b8;">Admin Tân Minh (@tanminh1204)</div>
+            </div>
+            <button type="button" class="btn-mini" onclick="closeTopMenuDrawer()">✕</button>
+        </div>
+
+        <button type="button" class="drawer-item-btn" onclick="closeTopMenuDrawer(); openChangePasswordModal();">
+            <span>🔑 Đổi mật khẩu</span>
+            <span style="color:#fbbf24; font-size:11px;">MK / OTP →</span>
+        </button>
+
+        <button type="button" class="drawer-item-btn" onclick="openVerifyGmailModal()">
+            <span>📧 Xác minh Gmail</span>
+            <span id="drawerGmailStatusBadge" class="badge badge-unknown">Chưa có Gmail</span>
+        </button>
+
+        <button type="button" class="drawer-item-btn" onclick="openResetPasswordGmailModal()">
+            <span>🔐 Đổi MK bằng Gmail</span>
+            <span style="color:#38bdf8; font-size:11px;">OTP Gmail →</span>
+        </button>
+
+        <button type="button" class="drawer-item-btn" onclick="closeTopMenuDrawer(); openBellModal();">
+            <span>🔔 Thông báo</span>
+            <span id="drawerBellCountBadge" class="badge badge-unknown">0 tin</span>
+        </button>
+
+        <button type="button" class="drawer-item-btn" onclick="closeTopMenuDrawer(); openAccountModal();">
+            <span>👤 Thông tin &amp; Đổi tài khoản</span>
+            <span style="color:#c084fc; font-size:11px;">Acc →</span>
+        </button>
+
+        <button type="button" class="drawer-item-btn" onclick="closeTopMenuDrawer(); downloadOfflineHtml();">
+            <span>💾 Lưu file HTML offline</span>
+            <span style="color:#4ade80; font-size:11px;">.html →</span>
+        </button>
+
+        <div class="panel" style="margin-top:auto; margin-bottom:0; font-size:11.5px; color:#94a3b8; line-height:1.45;">
+            <b style="color:#e2e8f0;">Lưu ý Gmail:</b> Nhập địa chỉ <code>@gmail.com</code> để nhận mã OTP 6 số xác minh tài khoản hoặc đổi mật khẩu trực tiếp.
+        </div>
+    </div>
+</div>
+
+<!-- MODAL XÁC MINH GMAIL -->
+<div id="verifyGmailModal" class="modal-backdrop" onclick="if(event.target===this) closeVerifyGmailModal()">
+    <div class="modal-card">
+        <h3>📧 Xác minh Gmail</h3>
+        <div class="modal-step" style="margin-bottom:10px;">
+            Gắn và xác thực địa chỉ Gmail cho tài khoản hiện tại để dùng khi cần đổi mật khẩu.
+        </div>
+
+        <div class="auth-field">
+            <label for="verifyGmailAccountSelect">Tài khoản cần xác minh</label>
+            <select id="verifyGmailAccountSelect"></select>
+        </div>
+
+        <div class="auth-field">
+            <label for="verifyGmailAddressInput">Địa chỉ Gmail (@gmail.com)</label>
+            <div class="row-group">
+                <input type="email" id="verifyGmailAddressInput" placeholder="VD: minh.nguyen@gmail.com">
+                <button type="button" class="btn btn-blue" onclick="sendVerifyGmailOtp()">Gửi mã OTP</button>
+            </div>
+        </div>
+
+        <div id="verifyGmailOtpPreview" class="otp-chip-box" style="display:none;"></div>
+
+        <div class="auth-field" style="margin-top:10px;">
+            <label for="verifyGmailOtpInput">Nhập mã xác minh 6 số</label>
+            <input type="text" id="verifyGmailOtpInput" maxlength="6" placeholder="Nhập 6 chữ số OTP">
+        </div>
+
+        <div id="verifyGmailFeedback" class="auth-msg"></div>
+
+        <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:12px;">
+            <button type="button" class="btn btn-green" onclick="confirmVerifyGmailOtp()">✅ Xác nhận Gmail</button>
+            <button type="button" class="btn-mini" onclick="closeVerifyGmailModal()">Đóng</button>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL ĐỔI MẬT KHẨU BẰNG GMAIL -->
+<div id="resetPassGmailModal" class="modal-backdrop" onclick="if(event.target===this) closeResetPasswordGmailModal()">
+    <div class="modal-card">
+        <h3>🔑 Đổi mật khẩu bằng Gmail</h3>
+        <div class="modal-step" style="margin-bottom:10px;">
+            Nhập tài khoản &amp; Gmail đã liên kết, gửi mã xác minh qua Gmail rồi đặt mật khẩu mới.
+        </div>
+
+        <div class="auth-field">
+            <label for="resetPwUsernameInput">Tên tài khoản (Username)</label>
+            <input type="text" id="resetPwUsernameInput" placeholder="VD: minh_v11">
+        </div>
+
+        <div class="auth-field">
+            <label for="resetPwGmailInput">Gmail của tài khoản</label>
+            <div class="row-group">
+                <input type="email" id="resetPwGmailInput" placeholder="VD: minh.nguyen@gmail.com">
+                <button type="button" class="btn btn-purple" onclick="sendResetPasswordGmailOtp()">Gửi mã Gmail</button>
+            </div>
+        </div>
+
+        <div id="resetPwOtpPreview" class="otp-chip-box" style="display:none;"></div>
+
+        <div class="auth-field" style="margin-top:10px;">
+            <label for="resetPwOtpInput">Mã xác minh 6 số từ Gmail</label>
+            <input type="text" id="resetPwOtpInput" maxlength="6" placeholder="Nhập mã 6 số">
+        </div>
+
+        <div class="grid-2">
+            <div>
+                <label for="resetNewPasswordInput">Mật khẩu mới</label>
+                <input type="password" id="resetNewPasswordInput" placeholder="Tối thiểu 4 ký tự">
+            </div>
+            <div>
+                <label for="resetConfirmPasswordInput">Nhập lại mật khẩu mới</label>
+                <input type="password" id="resetConfirmPasswordInput" placeholder="Xác nhận MK mới">
+            </div>
+        </div>
+
+        <div id="resetPwFeedback" class="auth-msg"></div>
+
+        <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:12px;">
+            <button type="button" class="btn btn-green" onclick="confirmResetPasswordWithGmail()">🔒 Đổi mật khẩu</button>
+            <button type="button" class="btn-mini" onclick="closeResetPasswordGmailModal()">Đóng</button>
+        </div>
+    </div>
+</div>
+
+<div class="app-shell">
+    <!-- Top Header + Cài App về máy -->
+    <div class="topbar">
+        <div class="brand-wrap">
+            <h2>bothotwarbytminh v14_4</h2>
+            <div class="brand-sub">Hyper Turbo Engine • Speed 0.01s / 0.02s • Check Start ID • Lưu Ngôn</div>
+        </div>
+        <div class="install-actions">
+            <button type="button" id="currentUserBtn" class="btn-account-pill" onclick="openAccountModal()" title="Quản lý tài khoản / Đăng nhập / Đăng xuất">👑 Admin Tân Minh</button>
+            <button type="button" id="bellNotifyBtn" class="btn-bell-top" onclick="openBellModal()" title="Thông báo từ Minh">🔔<span id="bellUnreadBadge" class="bell-badge-dot" style="display:none;">0</span></button>
+            <button type="button" id="pwaInstallBtn" class="btn-install" onclick="triggerInstallApp()">📲 Cài App</button>
+            <button type="button" id="hamburgerMenuBtn" class="btn-menu-hamburger" onclick="openTopMenuDrawer()" title="Mở menu (Đổi MK, Xác minh Gmail, Đổi MK bằng Gmail...)">☰</button>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div id="mainNavTabs" class="nav-tabs has-admin">
+        <button type="button" class="tab-btn" onclick="switchTab('tabDispatch', this)">🚀 Bắn Tin</button>
+        <button type="button" class="tab-btn" onclick="switchTab('tabBots', this)">🤖 Bot &amp; Start</button>
+        <button type="button" class="tab-btn" onclick="switchTab('tabGroups', this)">👥 Nhóm (<span id="tabGroupBadge">7/7</span>)</button>
+        <button type="button" class="tab-btn" onclick="switchTab('tabSavedTexts', this)">📌 Ngôn Treo (<span id="tabSavedBadge">0</span>)</button>
+        <button type="button" id="adminTabBtn" class="tab-btn active" style="display: block;" onclick="switchTab('tabAdmin', this)">👑 Admin (<span id="tabAdminBadge">1</span>)</button>
+    </div>
+
+    <!-- TAB 1: BẮN TIN & HYPER SPEED -->
+    <div id="tabDispatch" class="tab-pane">
+        <!-- Nội Dung Thông Báo + Lưu Ngôn Treo nhanh -->
+        <div class="panel">
+            <div class="panel-title">
+                <span>✍️ Nội dung tin nhắn (Ngôn từ)</span>
+                <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                    <button type="button" class="btn-mini" onclick="insertTag('{uid}')">+ {uid}</button>
+                    <button type="button" class="btn-mini" onclick="insertTag('@username')">+ @user</button>
+                    <button type="button" class="btn-mini" onclick="insertTag('{group}')">+ {group}</button>
+                    <input type="file" id="msgTxtFile" accept=".txt" style="display: none;" onchange="importMessageFromTxt(event)">
+                    <button type="button" class="btn-mini" onclick="document.getElementById('msgTxtFile').click()">📂 Nạp .txt</button>
+                </div>
+            </div>
+            <textarea id="message" placeholder="Nhập nội dung cần gửi, nạp file .txt hoặc chọn từ kho Ngôn Treo..."></textarea>
+            
+            <div class="row-group" style="margin-top: 7px;">
+                <input type="text" id="saveTemplateTitle" placeholder="Đặt tên ngôn treo để lưu lại..." style="flex: 1.4;">
+                <button type="button" class="btn btn-purple" onclick="saveCurrentMessageAsTemplate()">📌 Lưu ngôn treo</button>
+            </div>
+
+            <div id="txtOptions" class="txt-mode-info">
+                <label style="display: inline-flex; align-items: center; font-weight: 500; margin: 0; cursor: pointer;">
+                    <input type="checkbox" id="sendByLineMode" style="width: auto; margin-right: 6px;">
+                    Gửi lần lượt từng dòng trong file (mỗi đợt 1 dòng)
+                </label>
+                <span style="color: #f87171; cursor: pointer; font-weight: 700; text-decoration: underline;" onclick="clearTxtMessage()">Xóa</span>
+            </div>
+        </div>
+
+        <!-- Tag ID số & Ảnh & Hẹn giờ -->
+        <div class="panel">
+            <div class="grid-2" style="margin-bottom: 7px;">
+                <div>
+                    <label for="targetUserId">Tag ID số người dùng <span class="optional">(VD: 123456789)</span></label>
+                    <input type="text" id="targetUserId" placeholder="Nhập ID số cần tag">
+                </div>
+                <div>
+                    <label for="targetUsername">Tag @username kèm <span class="optional">(Tuỳ chọn)</span></label>
+                    <input type="text" id="targetUsername" placeholder="@username">
+                </div>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <label for="imageFile">Đính kèm ảnh <span class="optional">(Tuỳ chọn)</span></label>
+                    <input type="file" id="imageFile" accept="image/*">
+                </div>
+                <div>
+                    <label for="scheduleTime">Hẹn giờ gửi <span class="optional">(Trống = Gửi ngay)</span></label>
+                    <input type="datetime-local" id="scheduleTime">
+                </div>
+            </div>
+        </div>
+
+        <!-- Chỉnh Speed Tự Do Theo Giây (0.01s, 0.02s, 0.05s, 0.1s...) -->
+        <div class="panel">
+            <div class="panel-title">
+                <span>⚡ Speed Siêu Tốc (Tự nhập 0.01s, 0.02s, 0.05s...)</span>
+                <span id="speedSummaryBadge" class="badge badge-live">0.01s (10ms) • 10 tin/lần • 30 luồng</span>
+            </div>
+
+            <div class="speed-chip-bar">
+                <button type="button" class="btn-mini" onclick="setSpeedSeconds(0, 15, 40, 1)">⚡ 0s (Max)</button>
+                <button type="button" class="btn-mini active-chip" onclick="setSpeedSeconds(0.01, 10, 30, 1)">🔥 0.01s</button>
+                <button type="button" class="btn-mini" onclick="setSpeedSeconds(0.02, 8, 25, 1)">🚀 0.02s</button>
+                <button type="button" class="btn-mini" onclick="setSpeedSeconds(0.05, 5, 16, 1)">💨 0.05s</button>
+                <button type="button" class="btn-mini" onclick="setSpeedSeconds(0.1, 3, 10, 1)">🛡️ 0.1s</button>
+                <button type="button" class="btn-mini" onclick="setSpeedSeconds(0.3, 1, 6, 1)">⚖️ 0.3s</button>
+            </div>
+
+            <div class="speed-box">
+                <div class="grid-2">
+                    <div>
+                        <label for="delaySec">Tự nhập Speed (Giây - s):</label>
+                        <input type="number" id="delaySec" value="0.01" min="0" step="0.001" placeholder="VD: 0.01, 0.02, 0.05" oninput="syncFromSecondsInput()">
+                        <div id="speedUnitHint" class="speed-unit-hint">= 10 ms (~100 nhịp/giây)</div>
+                    </div>
+                    <div>
+                        <label for="burstCount">Số tin / 1 lần bắn:</label>
+                        <input type="number" id="burstCount" value="10" min="1" max="500" oninput="updateSpeedBadge()">
+                        <div class="speed-unit-hint" style="color:#94a3b8;">Bắn dồn nhiều tin/đợt</div>
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 8px;">
+                    <div>
+                        <label for="totalLoops">Tổng số đợt:</label>
+                        <input type="number" id="totalLoops" value="1" min="1" oninput="updateSpeedBadge()">
+                    </div>
+                    <div>
+                        <label for="maxConcurrencyInput">Luồng song song:</label>
+                        <input type="number" id="maxConcurrencyInput" value="30" min="1" max="200" oninput="updateSpeedBadge()">
+                    </div>
+                    <div>
+                        <label for="maxRetriesInput">Retry khi 429:</label>
+                        <input type="number" id="maxRetriesInput" value="2" min="0" max="10">
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; font-size: 11.5px; color: #cbd5e1;">
+                <label style="display: inline-flex; align-items: center; gap: 5px; margin: 0; font-weight: 500; cursor: pointer;">
+                    <input type="checkbox" id="hyperTurboMode" checked="" style="width: auto;"> Chế độ Hyper Burst (Bắn thẳng không nghẽn)
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 5px; margin: 0; font-weight: 500; cursor: pointer;">
+                    <input type="checkbox" id="autoPause429" style="width: auto;"> Giãn nhịp khi 429
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 5px; margin: 0; font-weight: 500; cursor: pointer;">
+                    <input type="checkbox" id="autoSkipDeadGroup" checked="" style="width: auto;"> Bỏ nhóm lỗi 403/400
+                </label>
+            </div>
+        </div>
+
+        <button id="sendBtn" class="btn-send" onclick="handleStartProcess()">🚀 BẮN TIN SIÊU TỐC (<span id="activeSummaryInline">4 bot • 7 nhóm</span>)</button>
+        <button id="stopBtn" class="btn-stop" onclick="stopProcess()">⛔ DỪNG TIẾN TRÌNH NGAY</button>
+
+        <div id="status"></div>
+
+        <!-- Log kết quả gửi chi tiết -->
+        <div class="panel" style="margin-top: 10px; margin-bottom: 0;">
+            <div class="panel-title">
+                <span>📟 Log kết quả gửi (Tối ưu siêu nhẹ)</span>
+                <button type="button" class="btn-mini" onclick="clearDeliveryLog()">Xóa log</button>
+            </div>
+            <div class="log-stats">
+                <span id="logTotalCount" class="stat-pill">Tổng: 0</span>
+                <span id="logSuccessCount" class="stat-pill stat-ok">Thành công: 0</span>
+                <span id="logErrorCount" class="stat-pill stat-err">Lỗi: 0</span>
+                <span id="logRetryCount" class="stat-pill stat-retry">429 Retry: 0</span>
+            </div>
+            <div id="deliveryLogContainer" class="log-box">
+                <div class="log-entry log-info">Sẵn sàng. Tự nhập speed 0.01, 0.02 ở trên và bấm Bắn Tin!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2: QUẢN LÝ BOT & CHECK AI ĐÃ START HIỆN ID -->
+    <div id="tabBots" class="tab-pane">
+        <div class="panel">
+            <label>➕ Thêm Token Bot mới:</label>
+            <div class="row-group">
+                <input type="text" id="newBotToken" placeholder="Dán token bot: 123456789:ABC-DEF...">
+                <button type="button" class="btn btn-green" onclick="addBotToken()">Thêm Bot</button>
+            </div>
+        </div>
+
+        <div class="panel" style="margin-bottom: 0;">
+            <div class="panel-title">
+                <span>🤖 Danh sách Bot (<span id="selectedBotCount">4</span>/<span id="totalBotCount">4</span> chọn rải)</span>
+                <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                    <button type="button" class="btn-mini" onclick="checkAllBots()">🔍 Check sống</button>
+                    <button type="button" class="btn-mini" onclick="toggleSelectAllBots(true)">Chọn hết</button>
+                    <button type="button" class="btn-mini" onclick="toggleSelectAllBots(false)">Bỏ chọn</button>
+                </div>
+            </div>
+            <div style="font-size: 11px; color: #94a3b8; margin-bottom: 8px;">
+                💡 Ở cuối mỗi tên bot có nút <b>👤 Check Start</b> để quét danh sách người đã bấm <code>/start</code> bot và hiện <b>ID số</b>.
+            </div>
+            <div id="botListContainer" class="scroll-box" style="max-height: 420px;"><div style="display: flex; flex-direction: column;"><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleBotSelect(0)">
+                        <div class="meta-col">
+                            <span class="meta-title">Tminh4 (@mihP4_bot)</span>
+                            <span class="meta-sub">9047226180:***r7WRuk</span>
+                        </div>
+                    </label>
+                    <span class="badge badge-live">Live</span>
+                    <button type="button" class="btn-mini" onclick="checkBotStarters(0)" title="Check những người đã /start bot này và lấy ID">👤 Check Start (5)</button>
+                    <button type="button" class="btn-mini" onclick="checkSingleBot(0)" title="Check sống bot">Live</button>
+                    <span class="remove-btn" title="Xóa bot" onclick="removeBot(0)">×</span>
+                </div></div><div style="display: flex; flex-direction: column;"><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleBotSelect(1)">
+                        <div class="meta-col">
+                            <span class="meta-title">Tminh5 (@mihP5_bot)</span>
+                            <span class="meta-sub">9128121116:***bvjvEs</span>
+                        </div>
+                    </label>
+                    <span class="badge badge-live">Live</span>
+                    <button type="button" class="btn-mini" onclick="checkBotStarters(1)" title="Check những người đã /start bot này và lấy ID">👤 Check Start (0)</button>
+                    <button type="button" class="btn-mini" onclick="checkSingleBot(1)" title="Check sống bot">Live</button>
+                    <span class="remove-btn" title="Xóa bot" onclick="removeBot(1)">×</span>
+                </div></div><div style="display: flex; flex-direction: column;"><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleBotSelect(2)">
+                        <div class="meta-col">
+                            <span class="meta-title">Tminh3 (@mihP3_bot)</span>
+                            <span class="meta-sub">9009517675:***tqcG1o</span>
+                        </div>
+                    </label>
+                    <span class="badge badge-live">Live</span>
+                    <button type="button" class="btn-mini" onclick="checkBotStarters(2)" title="Check những người đã /start bot này và lấy ID">👤 Check Start (0)</button>
+                    <button type="button" class="btn-mini" onclick="checkSingleBot(2)" title="Check sống bot">Live</button>
+                    <span class="remove-btn" title="Xóa bot" onclick="removeBot(2)">×</span>
+                </div></div><div style="display: flex; flex-direction: column;"><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleBotSelect(3)">
+                        <div class="meta-col">
+                            <span class="meta-title">Tminh2 (@mihP2_bot)</span>
+                            <span class="meta-sub">9297317445:***8ktrxM</span>
+                        </div>
+                    </label>
+                    <span class="badge badge-live">Live</span>
+                    <button type="button" class="btn-mini" onclick="checkBotStarters(3)" title="Check những người đã /start bot này và lấy ID">👤 Check Start (0)</button>
+                    <button type="button" class="btn-mini" onclick="checkSingleBot(3)" title="Check sống bot">Live</button>
+                    <span class="remove-btn" title="Xóa bot" onclick="removeBot(3)">×</span>
+                </div></div></div>
+        </div>
+    </div>
+
+    <!-- TAB 3: QUẢN LÝ NHÓM NHẬN TIN -->
+    <div id="tabGroups" class="tab-pane">
+        <div class="panel">
+            <label>➕ Thêm ID Nhóm hoặc User ID Cá Nhân:</label>
+            <div class="row-group" style="margin-bottom: 8px;">
+                <input type="text" id="newGroupId" placeholder="ID: -100xxx hoặc 12345678" style="flex: 1.3;">
+                <input type="text" id="newGroupName" placeholder="Tên gợi nhớ" style="flex: 1;">
+                <button type="button" class="btn btn-green" onclick="addGroupId()">Thêm</button>
+            </div>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <input type="file" id="idTxtFile" accept=".txt" style="display: none;" onchange="importIdsFromTxt(event)">
+                <button type="button" class="btn btn-blue" onclick="document.getElementById('idTxtFile').click()">📄 Nạp ID từ .txt</button>
+                <button type="button" class="btn-mini" onclick="restoreDefaultData()">♻️ Khôi phục dữ liệu cũ mặc định</button>
+            </div>
+        </div>
+
+        <div class="panel" style="margin-bottom: 0;">
+            <div class="panel-title">
+                <span>👥 Nhóm nhận tin (<span id="selectedCount">7</span>/<span id="groupCount">7</span>)</span>
+                <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                    <button type="button" class="btn-mini" onclick="toggleSelectAll(true)">Chọn tất cả</button>
+                    <button type="button" class="btn-mini" onclick="toggleSelectAll(false)">Bỏ chọn</button>
+                    <button type="button" class="btn-mini danger" onclick="clearAllGroups()">Xóa hết</button>
+                </div>
+            </div>
+            <div id="groupContainer" class="scroll-box" style="max-height: 380px;"><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleGroupSelect(0)">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">-1003324238197</span>
+                        <span style="color:#94a3b8; font-size:12px;">- Nhóm 1</span>
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(0)">×</span>
+                </div><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleGroupSelect(1)">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">-1003732990426</span>
+                        <span style="color:#94a3b8; font-size:12px;">- Nhóm 2</span>
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(1)">×</span>
+                </div><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleGroupSelect(2)">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">-1004324662735</span>
+                        <span style="color:#94a3b8; font-size:12px;">- Nhóm 3</span>
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(2)">×</span>
+                </div><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleGroupSelect(3)">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">-1004327353553</span>
+                        <span style="color:#94a3b8; font-size:12px;">- Nhóm 4</span>
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(3)">×</span>
+                </div><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleGroupSelect(4)">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">-1003379221243</span>
+                        <span style="color:#94a3b8; font-size:12px;">- Nhóm 5</span>
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(4)">×</span>
+                </div><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleGroupSelect(5)">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">-1004291014849</span>
+                        <span style="color:#94a3b8; font-size:12px;">- Nhóm 6</span>
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(5)">×</span>
+                </div><div class="item-card selected">
+                    <label>
+                        <input type="checkbox" checked="" onchange="toggleGroupSelect(6)">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">-1003300501687</span>
+                        <span style="color:#94a3b8; font-size:12px;">- Nhóm 7</span>
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(6)">×</span>
+                </div></div>
+        </div>
+    </div>
+
+    <!-- TAB 4: KHO LƯU NGÔN TREO -->
+    <div id="tabSavedTexts" class="tab-pane">
+        <div class="panel">
+            <div class="panel-title">
+                <span>📌 Tạo &amp; Lưu Ngôn Treo Mới</span>
+            </div>
+            <input type="text" id="newTemplateNameInput" placeholder="Tên gợi nhớ (VD: Ngôn treo war 1, Ngôn spam tag...)" style="margin-bottom: 7px;">
+            <textarea id="newTemplateContentInput" placeholder="Nhập nội dung ngôn treo cần lưu vĩnh viễn trên máy..." style="height: 90px; margin-bottom: 7px;"></textarea>
+            <button type="button" class="btn btn-purple" style="width: 100%;" onclick="addNewTemplateFromTab()">💾 Lưu vào kho Ngôn Treo</button>
+        </div>
+
+        <div class="panel" style="margin-bottom: 0;">
+            <div class="panel-title">
+                <span>📚 Danh sách Ngôn Treo đã lưu (<span id="savedTemplateCount">0</span>)</span>
+                <button type="button" class="btn-mini danger" onclick="clearAllTemplates()">Xóa tất cả</button>
+            </div>
+            <div id="savedTemplatesContainer" class="scroll-box" style="max-height: 330px;"><div style="text-align:center; color:#94a3b8; padding:14px;">Chưa có ngôn treo nào được lưu.</div></div>
+        </div>
+    </div>
+
+
+<!-- MODAL ĐỔI MẬT KHẨU (MỞ TỪ MENU 3 GẠCH) -->
+<div id="changePasswordModal" class="modal-backdrop" onclick="if(event.target===this) closeChangePasswordModal()">
+    <div class="modal-card" style="max-width: 520px; max-height: 88vh; overflow-y: auto;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <h3 style="margin:0;">🔑 Đổi Mật Khẩu</h3>
+            <button type="button" class="btn-mini" onclick="closeChangePasswordModal()">Đóng</button>
+        </div>
+
+        <div class="panel">
+            <div class="panel-title">
+                <span>🔑 Đổi mật khẩu bằng MK hiện tại</span>
+                <span id="cpAccountBadge" class="badge badge-live">Tài khoản</span>
+            </div>
+            <div class="auth-field">
+                <label for="cpUsernameInput">Tên tài khoản (Username)</label>
+                <input type="text" id="cpUsernameInput" placeholder="VD: tanminh1204">
+            </div>
+            <div class="auth-field">
+                <label for="cpCurrentPassInput">Mật khẩu hiện tại</label>
+                <input type="password" id="cpCurrentPassInput" placeholder="Nhập mật khẩu đang dùng">
+            </div>
+            <div class="grid-2" style="margin-bottom: 10px;">
+                <div>
+                    <label for="cpNewPassInput">Mật khẩu mới</label>
+                    <input type="password" id="cpNewPassInput" placeholder="Tối thiểu 4 ký tự">
+                </div>
+                <div>
+                    <label for="cpConfirmPassInput">Nhập lại MK mới</label>
+                    <input type="password" id="cpConfirmPassInput" placeholder="Xác nhận MK mới">
+                </div>
+            </div>
+            <button type="button" class="btn btn-green" style="width: 100%;" onclick="handleTabChangePassCurrent()">🔒 Cập nhật mật khẩu ngay</button>
+            <div id="cpCurrentFeedback" class="auth-msg"></div>
+        </div>
+
+        <div class="panel" style="margin-bottom: 0;">
+            <div class="panel-title">
+                <span>📧 Đổi mật khẩu qua mã OTP Gmail</span>
+                <button type="button" class="btn-mini" onclick="openVerifyGmailModal()">Xác minh Gmail</button>
+            </div>
+            <div class="auth-field">
+                <label for="cpOtpUsernameInput">Tên tài khoản</label>
+                <input type="text" id="cpOtpUsernameInput" placeholder="VD: tanminh1204">
+            </div>
+            <div class="auth-field">
+                <label for="cpOtpGmailInput">Gmail đã xác minh</label>
+                <div class="row-group">
+                    <input type="email" id="cpOtpGmailInput" placeholder="VD: tenban@gmail.com">
+                    <button type="button" class="btn btn-purple" onclick="sendTabResetOtp()">Gửi mã OTP</button>
+                </div>
+            </div>
+            <div id="cpOtpPreviewBox" class="otp-chip-box" style="display: none;"></div>
+            <div class="auth-field" style="margin-top: 8px;">
+                <label for="cpOtpCodeInput">Mã OTP 6 số</label>
+                <input type="text" id="cpOtpCodeInput" maxlength="6" placeholder="Nhập mã 6 số">
+            </div>
+            <div class="grid-2" style="margin-bottom: 10px;">
+                <div>
+                    <label for="cpOtpNewPassInput">Mật khẩu mới</label>
+                    <input type="password" id="cpOtpNewPassInput" placeholder="Tối thiểu 4 ký tự">
+                </div>
+                <div>
+                    <label for="cpOtpConfirmPassInput">Nhập lại MK mới</label>
+                    <input type="password" id="cpOtpConfirmPassInput" placeholder="Xác nhận MK mới">
+                </div>
+            </div>
+            <button type="button" class="btn btn-blue" style="width: 100%;" onclick="confirmTabResetOtp()">✅ Đổi MK bằng mã OTP</button>
+            <div id="cpOtpFeedback" class="auth-msg"></div>
+        </div>
+    
+    </div>
+</div>
+
+<!-- MODAL CHUÔNG THÔNG BÁO (MỌI NGƯỜI NHẤN VÀO SẼ THẤY MINH GỬI THÔNG BÁO) -->
+<div id="bellNoticeModal" class="modal-backdrop" onclick="if(event.target===this) closeBellModal()" style="display: none;">
+    <div class="modal-card" style="max-width: 480px; max-height: 88vh; overflow-y: auto;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <h3 style="margin:0;">🔔 Thông báo từ Minh</h3>
+            <div style="display:flex; gap:6px;">
+                <button type="button" class="btn-mini" onclick="markAllAnnouncementsRead()">Đã đọc hết</button>
+                <button type="button" class="btn-mini" onclick="closeBellModal()">Đóng</button>
+            </div>
+        </div>
+
+        <div id="bellSenderComposer" class="panel" style="display: block; margin-bottom: 10px; border-color: rgba(245, 158, 11, 0.4);">
+            <div class="panel-title">
+                <span>📣 Gửi thông báo mới cho mọi người</span>
+            </div>
+            <div class="auth-field">
+                <label for="announceTitleInput">Tiêu đề thông báo</label>
+                <input type="text" id="announceTitleInput" placeholder="VD: Cập nhật bản mới / Lưu ý bắn tin...">
+            </div>
+            <div class="auth-field">
+                <label for="announceBodyInput">Nội dung thông báo</label>
+                <textarea id="announceBodyInput" style="height: 76px;" placeholder="Nhập nội dung thông báo bạn muốn gửi..."></textarea>
+            </div>
+            <button type="button" class="btn btn-green" style="width:100%;" onclick="publishAnnouncement()">🚀 Đăng thông báo lên chuông</button>
+            <div id="announceFeedback" class="auth-msg" style="display: none;"></div>
+        </div>
+
+        <div id="bellAnnouncementsList" class="scroll-box" style="max-height: 320px;"><div style="text-align:center; color:#94a3b8; padding:16px;">Chưa có thông báo nào được gửi.</div></div>
+    </div>
+</div>
+
+    <!-- TAB 5: QUẢN TRỊ ADMIN RIÊNG CHO tanminh1204 -->
+    <div id="tabAdmin" class="tab-pane active">
+        <div class="panel">
+            <div class="panel-title">
+                <span>👑 Bảng Quản Trị Admin (<code>tanminh1204</code>)</span>
+                <button type="button" class="btn-mini" onclick="renderAdminPanel()">🔄 Làm mới</button>
+            </div>
+            <div class="admin-stat-grid">
+                <div class="admin-stat-card">
+                    <div id="adminTotalUsersStat" class="admin-stat-num">1</div>
+                    <div class="admin-stat-label">Tổng tài khoản</div>
+                </div>
+                <div class="admin-stat-card">
+                    <div id="adminVerifiedGmailStat" class="admin-stat-num">0</div>
+                    <div class="admin-stat-label">Đã xác minh Gmail</div>
+                </div>
+                <div class="admin-stat-card">
+                    <div id="adminActiveUserStat" class="admin-stat-num" style="font-size:12.5px; padding-top:3px;">@tanminh1204</div>
+                    <div class="admin-stat-label">Đang đăng nhập</div>
+                </div>
+            </div>
+            <div style="font-size: 11.5px; color: #94a3b8;">
+                Chỉ tài khoản Admin <b>tanminh1204</b> mới thấy tab này để kiểm tra danh sách tài khoản đã tạo, Gmail xác minh và dữ liệu đi kèm.
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-title">
+                <span>🔎 Tìm &amp; lọc tài khoản (Tên / Username / Gmail)</span>
+                <button type="button" class="btn-mini" onclick="resetAdminFilters()">Xóa lọc</button>
+            </div>
+            <div class="row-group" style="margin-bottom: 7px;">
+                <input type="text" id="adminSearchInput" placeholder="Nhập tên, username hoặc @gmail.com..." oninput="renderAdminPanel()">
+                <select id="adminGmailFilterSelect" onchange="renderAdminPanel()" style="max-width: 165px;">
+                    <option value="all">Tất cả Gmail</option>
+                    <option value="verified">Đã xác minh</option>
+                    <option value="unverified">Chưa xác minh</option>
+                    <option value="none">Chưa có Gmail</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="panel" style="margin-bottom: 0;">
+            <div class="panel-title">
+                <span>📋 Danh sách tài khoản đã tạo trên hệ thống</span>
+            </div>
+            <div id="adminUsersListContainer" class="scroll-box" style="max-height: 420px;"><div class="admin-acc-card">
+                <div class="admin-acc-top">
+                    <div>
+                        <b>Admin Tân Minh</b> <span style="color:#38bdf8;">(@tanminh1204)</span>
+                        <span class="badge badge-live" style="margin-left:5px;">ADMIN</span>
+                    </div>
+                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
+                        <button type="button" class="btn-mini" onclick="toggleAdminResetPwBox('tanminh1204')">🔑 Đổi MK</button>
+                        
+                    </div>
+                </div>
+                <div class="admin-acc-meta">
+                    <div><b>Gmail:</b> <span style="color:#94a3b8;">Chưa liên kết Gmail</span></div>
+                    <div><b>Tạo lúc:</b> 21:11:14 24/11/2026 • <b>Dữ liệu:</b> 4 bot, 7 nhóm, 0 ngôn treo</div>
+                </div>
+                <div id="adminPwBox_tanminh1204" class="row-group" style="display:none; margin-top:4px;">
+                    <input type="text" id="adminPwInput_tanminh1204" placeholder="Nhập mật khẩu mới cho @tanminh1204...">
+                    <button type="button" class="btn btn-green" onclick="adminSetUserPassword('tanminh1204')">Lưu MK</button>
+                </div>
+            </div></div>
+        </div>
+    </div>
+
+<!-- Modal hướng dẫn cài đặt về máy -->
+<div id="installHelpModal" class="modal-backdrop" onclick="if(event.target===this) closeInstallModal()" style="display: flex;">
+    <div class="modal-card">
+        <h3>📲 Cài đặt bothotwarbytminh v14_4 về màn hình chính</h3>
+        <div class="modal-step">
+            <b>1. Trên Android (Chrome / Edge / Cốc Cốc):</b><br>
+            Bấm dấu <b>⋮ (3 chấm)</b> góc trên bên phải trình duyệt → chọn <b>"Thêm vào màn hình chính"</b> hoặc <b>"Cài đặt ứng dụng"</b>.
+        </div>
+        <div class="modal-step">
+            <b>2. Trên iPhone / iPad (Safari):</b><br>
+            Bấm nút <b>Chia sẻ (ô vuông có mũi tên lên)</b> ở thanh dưới cùng → kéo xuống chọn <b>"Thêm vào MH chính"</b>.
+        </div>
+        <div class="modal-step">
+            <b>3. Chạy Offline 100% không cần mở lại web:</b><br>
+            Bấm nút <b>💾 Lưu file</b> để tải file <code>bothotwarbytminh-v14_4.html</code> về máy mở trực tiếp bất cứ lúc nào.
+        </div>
+        <div style="display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px;">
+            <button type="button" class="btn btn-blue" onclick="downloadOfflineHtml()">💾 Tải file HTML về máy</button>
+            <button type="button" class="btn-mini" onclick="closeInstallModal()">Đóng</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    // ==========================================
+    // 0. HỆ THỐNG ĐĂNG NHẬP / ĐĂNG KÝ TÀI KHOẢN & ADMIN
+    // ==========================================
+    const USERS_STORAGE_KEY = 'bothotwar_accounts_v14';
+    const SESSION_STORAGE_KEY = 'bothotwar_session_v14';
+    const ADMIN_USERNAME = 'tanminh1204';
+    const ADMIN_DEFAULT_PASS = '1204';
+    let authMode = 'login';
+    let currentAccount = null; // { username, displayName, isAdmin }
+
+    function isAdminAccount(accOrUsername) {
+        const uname = typeof accOrUsername === 'string'
+            ? accOrUsername
+            : (accOrUsername && accOrUsername.username);
+        return String(uname || '').trim().toLowerCase() === ADMIN_USERNAME;
+    }
+
+    function getBotStorageKey() {
+        const uname = (currentAccount && currentAccount.username) || 'default_user';
+        return `bothotwar_u_${encodeURIComponent(uname)}_bots`;
+    }
+
+    function getGroupStorageKey() {
+        const uname = (currentAccount && currentAccount.username) || 'default_user';
+        return `bothotwar_u_${encodeURIComponent(uname)}_groups`;
+    }
+
+    function getTemplateStorageKey() {
+        const uname = (currentAccount && currentAccount.username) || 'default_user';
+        return `bothotwar_u_${encodeURIComponent(uname)}_templates`;
+    }
+
+    async function ensureAdminAccountSeeded() {
+        const users = loadUsersMap();
+        const desiredHash = await hashPasswordText('tanminh12042013@');
+        if (!users[ADMIN_USERNAME]) {
+            users[ADMIN_USERNAME] = {
+                username: ADMIN_USERNAME,
+                displayName: 'Admin Tân Minh',
+                role: 'admin',
+                pwHash: desiredHash,
+                createdAt: new Date().toLocaleString('vi-VN'),
+                gmail: '',
+                gmailVerified: false
+            };
+            saveUsersMap(users);
+        } else {
+            users[ADMIN_USERNAME].role = 'admin';
+            if (!users[ADMIN_USERNAME].pwHash) {
+                users[ADMIN_USERNAME].pwHash = desiredHash;
+            }
+            saveUsersMap(users);
+        }
+    }
+
+    function applyAdminTabVisibility() {
+        const isAdm = Boolean(currentAccount && isAdminAccount(currentAccount));
+        const navEl = document.getElementById('mainNavTabs');
+        const adminBtn = document.getElementById('adminTabBtn');
+        const adminPane = document.getElementById('tabAdmin');
+        const users = loadUsersMap();
+
+        if (navEl) navEl.classList.toggle('has-admin', isAdm);
+        if (adminBtn) {
+            adminBtn.style.display = isAdm ? 'block' : 'none';
+            const badge = document.getElementById('tabAdminBadge');
+            if (badge) badge.innerText = String(Object.keys(users).length);
+        }
+        if (!isAdm && adminPane && adminPane.classList.contains('active')) {
+            adminPane.classList.remove('active');
+            const firstTabBtn = document.querySelector('#mainNavTabs .tab-btn');
+            switchTab('tabDispatch', firstTabBtn);
+        }
+        if (isAdm) {
+            renderAdminPanel();
+        }
+    }
+
+    function resetAdminFilters() {
+        const sEl = document.getElementById('adminSearchInput');
+        const fEl = document.getElementById('adminGmailFilterSelect');
+        if (sEl) sEl.value = '';
+        if (fEl) fEl.value = 'all';
+        renderAdminPanel();
+    }
+
+    function toggleAdminResetPwBox(username) {
+        const safeId = `adminPwBox_${encodeURIComponent(username)}`;
+        const box = document.getElementById(safeId);
+        if (!box) return;
+        box.style.display = box.style.display === 'none' ? 'flex' : 'none';
+    }
+
+    async function adminSetUserPassword(username) {
+        const clean = String(username || '').trim().toLowerCase();
+        const inputEl = document.getElementById(`adminPwInput_${encodeURIComponent(clean)}`);
+        const newPw = inputEl ? inputEl.value : '';
+        if (!newPw || newPw.length < 4) {
+            showStatus('⚠️ Mật khẩu mới phải có ít nhất 4 ký tự!', 'error');
+            return;
+        }
+        const users = loadUsersMap();
+        if (!users[clean]) {
+            showStatus('❌ Không tìm thấy tài khoản này!', 'error');
+            return;
+        }
+        users[clean].pwHash = await hashPasswordText(newPw);
+        users[clean].passwordUpdatedAt = new Date().toLocaleString('vi-VN');
+        saveUsersMap(users);
+        if (inputEl) inputEl.value = '';
+        const box = document.getElementById(`adminPwBox_${encodeURIComponent(clean)}`);
+        if (box) box.style.display = 'none';
+        renderAdminPanel();
+        showStatus(`🔑 Admin đã đổi mật khẩu cho @${clean} thành công!`, 'success');
+    }
+
+    function renderAdminPanel() {
+        const users = loadUsersMap();
+        const keys = Object.keys(users);
+        const totalEl = document.getElementById('adminTotalUsersStat');
+        const verifiedEl = document.getElementById('adminVerifiedGmailStat');
+        const activeEl = document.getElementById('adminActiveUserStat');
+        const badgeEl = document.getElementById('tabAdminBadge');
+        const listEl = document.getElementById('adminUsersListContainer');
+
+        const searchQ = (document.getElementById('adminSearchInput')?.value || '').trim().toLowerCase();
+        const gmailFilter = document.getElementById('adminGmailFilterSelect')?.value || 'all';
+
+        const verifiedCount = keys.filter(k => users[k] && users[k].gmailVerified && users[k].gmail).length;
+        if (totalEl) totalEl.innerText = String(keys.length);
+        if (verifiedEl) verifiedEl.innerText = String(verifiedCount);
+        if (activeEl) activeEl.innerText = currentAccount ? `@${currentAccount.username}` : '-';
+        if (badgeEl) badgeEl.innerText = String(keys.length);
+
+        if (!listEl) return;
+        const filteredKeys = keys.filter(k => {
+            const u = users[k] || {};
+            const nameStr = String(u.displayName || '').toLowerCase();
+            const userStr = String(k || '').toLowerCase();
+            const mailStr = String(u.gmail || '').toLowerCase();
+
+            if (searchQ && !nameStr.includes(searchQ) && !userStr.includes(searchQ) && !mailStr.includes(searchQ)) {
+                return false;
+            }
+            if (gmailFilter === 'verified') return Boolean(u.gmail && u.gmailVerified);
+            if (gmailFilter === 'unverified') return Boolean(u.gmail && !u.gmailVerified);
+            if (gmailFilter === 'none') return !u.gmail;
+            return true;
+        });
+
+        if (filteredKeys.length === 0) {
+            listEl.innerHTML = '<div style="text-align:center; color:#94a3b8; padding:12px;">Không có tài khoản khớp bộ lọc.</div>';
+            return;
+        }
+
+        listEl.innerHTML = '';
+        filteredKeys.forEach(k => {
+            const u = users[k] || {};
+            const isAdmRow = isAdminAccount(k);
+            let botCnt = 0;
+            let grpCnt = 0;
+            let tplCnt = 0;
+            try {
+                const bRaw = localStorage.getItem(`bothotwar_u_${encodeURIComponent(k)}_bots`);
+                const gRaw = localStorage.getItem(`bothotwar_u_${encodeURIComponent(k)}_groups`);
+                const tRaw = localStorage.getItem(`bothotwar_u_${encodeURIComponent(k)}_templates`);
+                botCnt = bRaw ? JSON.parse(bRaw).length : 0;
+                grpCnt = gRaw ? JSON.parse(gRaw).length : 0;
+                tplCnt = tRaw ? JSON.parse(tRaw).length : 0;
+            } catch (e) {}
+
+            const gmailText = u.gmail
+                ? `${escapeHtml(u.gmail)} ${u.gmailVerified ? '<span class="badge badge-live">Đã xác minh</span>' : '<span class="badge badge-checking">Chưa xác minh</span>'}`
+                : '<span style="color:#94a3b8;">Chưa liên kết Gmail</span>';
+
+            const encKey = encodeURIComponent(k);
+            const card = document.createElement('div');
+            card.className = 'admin-acc-card';
+            card.innerHTML = `
+                <div class="admin-acc-top">
+                    <div>
+                        <b>${escapeHtml(u.displayName || k)}</b> <span style="color:#38bdf8;">(@${escapeHtml(k)})</span>
+                        ${isAdmRow ? '<span class="badge badge-live" style="margin-left:5px;">ADMIN</span>' : '<span class="badge badge-unknown" style="margin-left:5px;">USER</span>'}
+                    </div>
+                    <div style="display:flex; gap:5px; flex-wrap:wrap;">
+                        <button type="button" class="btn-mini" onclick="toggleAdminResetPwBox('${escapeHtml(k)}')">🔑 Đổi MK</button>
+                        ${!isAdmRow ? `<button type="button" class="btn-mini danger" onclick="adminDeleteUserAccount('${escapeHtml(k)}')">Xóa acc</button>` : ''}
+                    </div>
+                </div>
+                <div class="admin-acc-meta">
+                    <div><b>Gmail:</b> ${gmailText}</div>
+                    <div><b>Tạo lúc:</b> ${escapeHtml(u.createdAt || 'Không rõ')} • <b>Dữ liệu:</b> ${botCnt} bot, ${grpCnt} nhóm, ${tplCnt} ngôn treo</div>
+                </div>
+                <div id="adminPwBox_${encKey}" class="row-group" style="display:none; margin-top:4px;">
+                    <input type="text" id="adminPwInput_${encKey}" placeholder="Nhập mật khẩu mới cho @${escapeHtml(k)}...">
+                    <button type="button" class="btn btn-green" onclick="adminSetUserPassword('${escapeHtml(k)}')">Lưu MK</button>
+                </div>
+            `;
+            listEl.appendChild(card);
+        });
+    }
+
+    function adminDeleteUserAccount(targetUsername) {
+        const clean = String(targetUsername || '').trim().toLowerCase();
+        if (!clean || isAdminAccount(clean)) {
+            showStatus('⚠️ Không thể xóa tài khoản Admin tanminh1204!', 'error');
+            return;
+        }
+        if (!confirm(`Xóa tài khoản @${clean} và dữ liệu riêng của tài khoản này?`)) return;
+        const users = loadUsersMap();
+        delete users[clean];
+        saveUsersMap(users);
+        localStorage.removeItem(`bothotwar_u_${encodeURIComponent(clean)}_bots`);
+        localStorage.removeItem(`bothotwar_u_${encodeURIComponent(clean)}_groups`);
+        localStorage.removeItem(`bothotwar_u_${encodeURIComponent(clean)}_templates`);
+        renderAdminPanel();
+        showStatus(`🗑️ Đã xóa tài khoản @${clean}!`, 'success');
+    }
+
+    async function hashPasswordText(plain) {
+        const str = String(plain || '');
+        if (window.crypto && window.crypto.subtle && window.TextEncoder) {
+            const buf = await window.crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+            return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+        // Fallback nếu môi trường không hỗ trợ WebCrypto
+        let h = 2166136261;
+        for (let i = 0; i < str.length; i++) {
+            h ^= str.charCodeAt(i);
+            h = Math.imul(h, 16777619);
+        }
+        return 'fnv1a_' + (h >>> 0).toString(16);
+    }
+
+    function loadUsersMap() {
+        try {
+            const raw = localStorage.getItem(USERS_STORAGE_KEY);
+            const parsed = raw ? JSON.parse(raw) : {};
+            return parsed && typeof parsed === 'object' ? parsed : {};
+        } catch (e) {
+            return {};
+        }
+    }
+
+    function saveUsersMap(map) {
+        localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(map));
+    }
+
+    function setAuthMode(mode) {
+        authMode = mode === 'register' ? 'register' : 'login';
+        document.getElementById('modeLoginBtn').classList.toggle('active', authMode === 'login');
+        document.getElementById('modeRegisterBtn').classList.toggle('active', authMode === 'register');
+        document.getElementById('authDisplayNameWrap').style.display = authMode === 'register' ? 'block' : 'none';
+        document.getElementById('authConfirmWrap').style.display = authMode === 'register' ? 'block' : 'none';
+        document.getElementById('authSubmitBtn').innerText = authMode === 'register' ? '✨ Tạo tài khoản mới' : '🔐 Đăng nhập ngay';
+        document.getElementById('authPassword').setAttribute('autocomplete', authMode === 'register' ? 'new-password' : 'current-password');
+        hideAuthMessage();
+        updateSavedAccountsBadge();
+    }
+
+    function updateSavedAccountsBadge() {
+        const users = loadUsersMap();
+        const names = Object.keys(users);
+        const el = document.getElementById('savedAccountsQuickCount');
+        if (el) {
+            el.innerText = names.length > 0 ? `Đã lưu ${names.length} tài khoản` : '';
+        }
+    }
+
+    function showAuthMessage(text, type) {
+        const box = document.getElementById('authMessageBox');
+        box.style.display = 'block';
+        box.className = 'auth-msg ' + (type === 'success' ? 'success' : 'error');
+        box.innerText = text;
+    }
+
+    function hideAuthMessage() {
+        const box = document.getElementById('authMessageBox');
+        if (box) {
+            box.style.display = 'none';
+            box.innerText = '';
+        }
+    }
+
+    function showAuthOverlay(prefillUser) {
+        setAuthMode(authMode);
+        if (prefillUser) {
+            document.getElementById('authUsername').value = prefillUser;
+        }
+        document.getElementById('authPassword').value = '';
+        document.getElementById('authConfirmPassword').value = '';
+        document.getElementById('authGateModal').style.display = 'flex';
+    }
+
+    function hideAuthOverlay() {
+        document.getElementById('authGateModal').style.display = 'none';
+        hideAuthMessage();
+    }
+
+    function migrateLegacyDataIfNeeded(username) {
+        const botKey = getBotStorageKey();
+        const grpKey = getGroupStorageKey();
+        const tplKey = getTemplateStorageKey();
+
+        if (!localStorage.getItem(botKey) && localStorage.getItem('hoantrinh_telegram_bots_v1')) {
+            localStorage.setItem(botKey, localStorage.getItem('hoantrinh_telegram_bots_v1'));
+        }
+        if (!localStorage.getItem(grpKey) && localStorage.getItem('hoantrinh_telegram_groups_v2')) {
+            localStorage.setItem(grpKey, localStorage.getItem('hoantrinh_telegram_groups_v2'));
+        }
+        if (!localStorage.getItem(tplKey) && localStorage.getItem('bothotwar_saved_templates_v9')) {
+            localStorage.setItem(tplKey, localStorage.getItem('bothotwar_saved_templates_v9'));
+        }
+    }
+
+    function applyAuthenticatedSession(acc, remember) {
+        const adm = isAdminAccount(acc);
+        currentAccount = {
+            username: String(acc.username || '').trim().toLowerCase(),
+            displayName: adm ? 'Admin Tân Minh' : (acc.displayName || acc.username),
+            isAdmin: adm
+        };
+        if (remember) {
+            localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(currentAccount));
+        } else {
+            localStorage.removeItem(SESSION_STORAGE_KEY);
+        }
+        updateAccountTopbarButton();
+        applyAdminTabVisibility();
+        hideAuthOverlay();
+        reloadWorkspaceForCurrentAccount();
+    }
+
+    async function handleAuthSubmit(event) {
+        event.preventDefault();
+        const rawUser = document.getElementById('authUsername').value.trim().toLowerCase();
+        const password = document.getElementById('authPassword').value;
+        const remember = document.getElementById('rememberSessionCheck').checked;
+
+        if (!/^[a-z0-9_.-]{3,24}$/.test(rawUser)) {
+            showAuthMessage('Tên tài khoản gồm 3-24 ký tự (chữ thường, số, _, ., -).', 'error');
+            return;
+        }
+        if (!password || password.length < 4) {
+            showAuthMessage('Mật khẩu phải có ít nhất 4 ký tự!', 'error');
+            return;
+        }
+
+        const users = loadUsersMap();
+        const pwHash = await hashPasswordText(password);
+
+        if (authMode === 'register') {
+            const confirmPw = document.getElementById('authConfirmPassword').value;
+            const displayName = document.getElementById('authDisplayName').value.trim() || rawUser;
+            if (password !== confirmPw) {
+                showAuthMessage('Mật khẩu nhập lại không khớp!', 'error');
+                return;
+            }
+            if (rawUser === ADMIN_USERNAME) {
+                users[rawUser] = {
+                    username: rawUser,
+                    displayName: 'Admin Tân Minh',
+                    role: 'admin',
+                    pwHash: pwHash,
+                    createdAt: (users[rawUser] && users[rawUser].createdAt) || new Date().toLocaleString('vi-VN'),
+                    gmail: (users[rawUser] && users[rawUser].gmail) || '',
+                    gmailVerified: Boolean(users[rawUser] && users[rawUser].gmailVerified)
+                };
+                saveUsersMap(users);
+                migrateLegacyDataIfNeeded(rawUser);
+                applyAuthenticatedSession({ username: rawUser, displayName: 'Admin Tân Minh', isAdmin: true }, remember);
+                showStatus(`👑 Đã thiết lập & đăng nhập tài khoản ADMIN @${rawUser}!`, 'success');
+                return;
+            }
+            if (users[rawUser]) {
+                showAuthMessage('Tên tài khoản này đã tồn tại! Hãy chuyển sang Đăng nhập.', 'error');
+                return;
+            }
+            users[rawUser] = {
+                username: rawUser,
+                displayName: displayName,
+                role: 'user',
+                pwHash: pwHash,
+                createdAt: new Date().toLocaleString('vi-VN'),
+                gmail: '',
+                gmailVerified: false
+            };
+            saveUsersMap(users);
+            migrateLegacyDataIfNeeded(rawUser);
+            applyAuthenticatedSession({ username: rawUser, displayName: displayName, isAdmin: false }, remember);
+            showStatus(`✨ Đã tạo & đăng nhập tài khoản "${displayName}" (@${rawUser})!`, 'success');
+        } else {
+            let accRecord = users[rawUser];
+            if (!accRecord && rawUser === ADMIN_USERNAME && password === 'tanminh12042013@') {
+                accRecord = {
+                    username: ADMIN_USERNAME,
+                    displayName: 'Admin Tân Minh',
+                    role: 'admin',
+                    pwHash: pwHash,
+                    createdAt: new Date().toLocaleString('vi-VN'),
+                    gmail: '',
+                    gmailVerified: false
+                };
+                users[rawUser] = accRecord;
+                saveUsersMap(users);
+            }
+            if (!accRecord) {
+                showAuthMessage('Không tìm thấy tài khoản này! Bấm "Đăng ký" để tạo mới.', 'error');
+                return;
+            }
+            if (accRecord.pwHash !== pwHash) {
+                showAuthMessage('Sai mật khẩu! Vui lòng kiểm tra lại.', 'error');
+                return;
+            }
+            migrateLegacyDataIfNeeded(rawUser);
+            const displayName = isAdminAccount(rawUser) ? 'Admin Tân Minh' : (accRecord.displayName || rawUser);
+            applyAuthenticatedSession({ username: rawUser, displayName: displayName, isAdmin: isAdminAccount(rawUser) }, remember);
+            showStatus(`👋 Chào mừng trở lại, ${displayName}!`, 'success');
+        }
+    }
+
+    function updateAccountTopbarButton() {
+        const btn = document.getElementById('currentUserBtn');
+        if (!btn) return;
+        if (!currentAccount) {
+            btn.innerHTML = '🔐 Đăng nhập';
+        } else if (isAdminAccount(currentAccount)) {
+            btn.innerHTML = `👑 ${escapeHtml(currentAccount.displayName || ADMIN_USERNAME)}`;
+        } else {
+            btn.innerHTML = `👤 ${escapeHtml(currentAccount.displayName || currentAccount.username)}`;
+        }
+    }
+
+    function openAccountModal() {
+        const users = loadUsersMap();
+        const box = document.getElementById('accountSummaryContent');
+        const switcher = document.getElementById('accountSwitcherList');
+
+        if (!currentAccount) {
+            box.innerHTML = `<b>Trạng thái:</b> Chưa đăng nhập tài khoản.`;
+        } else {
+            const info = users[currentAccount.username] || {};
+            const admLabel = isAdminAccount(currentAccount) ? ' <span class="badge badge-live">ADMIN</span>' : '';
+            box.innerHTML = `
+                <div><b>Tên hiển thị:</b> ${escapeHtml(currentAccount.displayName || currentAccount.username)}${admLabel}</div>
+                <div><b>Tài khoản:</b> <code>@${escapeHtml(currentAccount.username)}</code></div>
+                <div style="font-size:11px; color:#94a3b8; margin-top:3px;">Tạo lúc: ${escapeHtml(info.createdAt || 'Đã lưu trên trình duyệt')}</div>
+            `;
+        }
+
+        const accKeys = Object.keys(users);
+        if (accKeys.length > 0) {
+            let html = '<div style="font-size:11.5px; color:#94a3b8; margin-bottom:5px;">Tài khoản đã lưu trên máy này:</div>';
+            accKeys.forEach(k => {
+                const u = users[k];
+                const isCurr = currentAccount && currentAccount.username === k;
+                html += `
+                    <div class="starter-row" style="background:rgba(30,41,59,0.55); padding:6px 8px; border-radius:7px; margin-bottom:5px;">
+                        <div>
+                            <b>${escapeHtml(u.displayName || k)}</b> <span style="color:#94a3b8;">(@${escapeHtml(k)})</span>
+                            ${isAdminAccount(k) ? '<span class="badge badge-live" style="margin-left:5px;">ADMIN</span>' : ''}
+                            ${isCurr ? '<span class="badge badge-checking" style="margin-left:5px;">Đang dùng</span>' : ''}
+                        </div>
+                        <button type="button" class="btn-mini" onclick="closeAccountModal(); setAuthMode('login'); showAuthOverlay('${escapeHtml(k)}');">Đổi sang acc này</button>
+                    </div>
+                `;
+            });
+            switcher.innerHTML = html;
+        } else {
+            switcher.innerHTML = '';
+        }
+
+        document.getElementById('accountInfoModal').style.display = 'flex';
+    }
+
+    function closeAccountModal() {
+        document.getElementById('accountInfoModal').style.display = 'none';
+    }
+
+    function showLoginScreenFromModal() {
+        closeAccountModal();
+        showAuthOverlay('');
+    }
+
+    function logoutCurrentAccount() {
+        localStorage.removeItem(SESSION_STORAGE_KEY);
+        currentAccount = null;
+        updateAccountTopbarButton();
+        applyAdminTabVisibility();
+        closeAccountModal();
+        setAuthMode('login');
+        showAuthOverlay('');
+    }
+
+    
+    // ==========================================
+    // 0B. MENU 3 GẠCH: XÁC MINH GMAIL & ĐỔI MK BẰNG GMAIL
+    // ==========================================
+    let pendingGmailVerifyOtp = null; // { username, gmail, code, expiresAt }
+    let pendingGmailResetOtp = null;  // { username, gmail, code, expiresAt }
+
+    function openTopMenuDrawer() {
+        refreshDrawerAccountInfo();
+        document.getElementById('topMenuDrawer').style.display = 'flex';
+    }
+
+    function closeTopMenuDrawer() {
+        document.getElementById('topMenuDrawer').style.display = 'none';
+    }
+
+    function refreshDrawerAccountInfo() {
+        const subEl = document.getElementById('drawerAccountSubtitle');
+        const badgeEl = document.getElementById('drawerGmailStatusBadge');
+        const users = loadUsersMap();
+
+        if (!currentAccount) {
+            if (subEl) subEl.innerText = 'Chưa đăng nhập tài khoản';
+            if (badgeEl) {
+                badgeEl.className = 'badge badge-unknown';
+                badgeEl.innerText = 'Cần đăng nhập';
+            }
+            return;
+        }
+
+        const acc = users[currentAccount.username];
+        if (subEl) {
+            subEl.innerText = `${currentAccount.displayName || currentAccount.username} (@${currentAccount.username})`;
+        }
+        if (badgeEl) {
+            if (acc && acc.gmailVerified && acc.gmail) {
+                badgeEl.className = 'badge badge-live';
+                badgeEl.innerText = 'Đã xác minh';
+            } else if (acc && acc.gmail) {
+                badgeEl.className = 'badge badge-checking';
+                badgeEl.innerText = 'Chờ xác minh';
+            } else {
+                badgeEl.className = 'badge badge-unknown';
+                badgeEl.innerText = 'Chưa có Gmail';
+            }
+        }
+    }
+
+    function isValidGmailAddress(email) {
+        const clean = String(email || '').trim().toLowerCase();
+        return /^[a-z0-9._%+-]+@gmail\.com$/.test(clean);
+    }
+
+    function generateSixDigitOtp() {
+        return String(Math.floor(100000 + Math.random() * 900000));
+    }
+
+    function setBoxMessage(elId, text, type) {
+        const box = document.getElementById(elId);
+        if (!box) return;
+        box.style.display = 'block';
+        box.className = 'auth-msg ' + (type === 'success' ? 'success' : 'error');
+        box.innerText = text;
+    }
+
+    function clearBoxMessage(elId) {
+        const box = document.getElementById(elId);
+        if (!box) return;
+        box.style.display = 'none';
+        box.innerText = '';
+    }
+
+    function openVerifyGmailModal() {
+        closeTopMenuDrawer();
+        clearBoxMessage('verifyGmailFeedback');
+        document.getElementById('verifyGmailOtpInput').value = '';
+        document.getElementById('verifyGmailOtpPreview').style.display = 'none';
+        pendingGmailVerifyOtp = null;
+
+        const users = loadUsersMap();
+        const selectEl = document.getElementById('verifyGmailAccountSelect');
+        const keys = Object.keys(users);
+
+        if (keys.length === 0) {
+            showStatus('⚠️ Chưa có tài khoản nào được tạo! Hãy Đăng ký tài khoản trước.', 'error');
+            setAuthMode('register');
+            showAuthOverlay('');
+            return;
+        }
+
+        selectEl.innerHTML = '';
+        keys.forEach(k => {
+            const opt = document.createElement('option');
+            opt.value = k;
+            opt.textContent = `${users[k].displayName || k} (@${k})`;
+            selectEl.appendChild(opt);
+        });
+
+        const defaultUser = (currentAccount && users[currentAccount.username])
+            ? currentAccount.username
+            : keys[0];
+        selectEl.value = defaultUser;
+        document.getElementById('verifyGmailAddressInput').value = users[defaultUser].gmail || '';
+        selectEl.onchange = () => {
+            const chosen = users[selectEl.value];
+            document.getElementById('verifyGmailAddressInput').value = (chosen && chosen.gmail) || '';
+        };
+
+        document.getElementById('verifyGmailModal').style.display = 'flex';
+    }
+
+    function closeVerifyGmailModal() {
+        document.getElementById('verifyGmailModal').style.display = 'none';
+    }
+
+    function sendVerifyGmailOtp() {
+        clearBoxMessage('verifyGmailFeedback');
+        const username = document.getElementById('verifyGmailAccountSelect').value;
+        const gmail = document.getElementById('verifyGmailAddressInput').value.trim().toLowerCase();
+        const users = loadUsersMap();
+
+        if (!username || !users[username]) {
+            setBoxMessage('verifyGmailFeedback', 'Không tìm thấy tài khoản được chọn!', 'error');
+            return;
+        }
+        if (!isValidGmailAddress(gmail)) {
+            setBoxMessage('verifyGmailFeedback', 'Vui lòng nhập đúng địa chỉ Gmail hợp lệ (VD: tenban@gmail.com)!', 'error');
+            return;
+        }
+
+        const code = generateSixDigitOtp();
+        pendingGmailVerifyOtp = {
+            username,
+            gmail,
+            code,
+            expiresAt: Date.now() + 5 * 60 * 1000
+        };
+
+        const preview = document.getElementById('verifyGmailOtpPreview');
+        preview.style.display = 'block';
+        preview.innerHTML = `📩 Mã xác minh gửi tới <b>${escapeHtml(gmail)}</b>: <span class="otp-code-highlight">${code}</span> <span style="color:#94a3b8;">(Hiệu lực 5 phút)</span>`;
+        setBoxMessage('verifyGmailFeedback', `Đã tạo mã OTP xác minh cho ${gmail}. Nhập mã 6 số để hoàn tất!`, 'success');
+    }
+
+    function confirmVerifyGmailOtp() {
+        clearBoxMessage('verifyGmailFeedback');
+        const username = document.getElementById('verifyGmailAccountSelect').value;
+        const gmail = document.getElementById('verifyGmailAddressInput').value.trim().toLowerCase();
+        const enteredCode = document.getElementById('verifyGmailOtpInput').value.trim();
+
+        if (!pendingGmailVerifyOtp || Date.now() > pendingGmailVerifyOtp.expiresAt) {
+            setBoxMessage('verifyGmailFeedback', 'Mã OTP đã hết hạn hoặc chưa được gửi! Bấm "Gửi mã OTP" trước.', 'error');
+            return;
+        }
+        if (pendingGmailVerifyOtp.username !== username || pendingGmailVerifyOtp.gmail !== gmail) {
+            setBoxMessage('verifyGmailFeedback', 'Tài khoản hoặc Gmail không khớp với mã OTP đã gửi!', 'error');
+            return;
+        }
+        if (enteredCode !== pendingGmailVerifyOtp.code) {
+            setBoxMessage('verifyGmailFeedback', 'Mã xác minh 6 số không đúng!', 'error');
+            return;
+        }
+
+        const users = loadUsersMap();
+        if (!users[username]) {
+            setBoxMessage('verifyGmailFeedback', 'Tài khoản không tồn tại!', 'error');
+            return;
+        }
+
+        users[username].gmail = gmail;
+        users[username].gmailVerified = true;
+        users[username].gmailVerifiedAt = new Date().toLocaleString('vi-VN');
+        saveUsersMap(users);
+        pendingGmailVerifyOtp = null;
+        refreshDrawerAccountInfo();
+
+        setBoxMessage('verifyGmailFeedback', `✅ Đã xác minh thành công Gmail ${gmail} cho @${username}!`, 'success');
+        showStatus(`📧 Đã xác minh Gmail ${gmail} cho tài khoản @${username}!`, 'success');
+    }
+
+    function openResetPasswordGmailModal() {
+        closeTopMenuDrawer();
+        clearBoxMessage('resetPwFeedback');
+        document.getElementById('resetPwOtpInput').value = '';
+        document.getElementById('resetNewPasswordInput').value = '';
+        document.getElementById('resetConfirmPasswordInput').value = '';
+        document.getElementById('resetPwOtpPreview').style.display = 'none';
+        pendingGmailResetOtp = null;
+
+        const users = loadUsersMap();
+        const activeUser = currentAccount ? currentAccount.username : '';
+        const userField = document.getElementById('resetPwUsernameInput');
+        const gmailField = document.getElementById('resetPwGmailInput');
+
+        userField.value = activeUser;
+        gmailField.value = (activeUser && users[activeUser] && users[activeUser].gmail) ? users[activeUser].gmail : '';
+
+        document.getElementById('resetPassGmailModal').style.display = 'flex';
+    }
+
+    function closeResetPasswordGmailModal() {
+        document.getElementById('resetPassGmailModal').style.display = 'none';
+    }
+
+    function sendResetPasswordGmailOtp() {
+        clearBoxMessage('resetPwFeedback');
+        const username = document.getElementById('resetPwUsernameInput').value.trim().toLowerCase();
+        const gmail = document.getElementById('resetPwGmailInput').value.trim().toLowerCase();
+        const users = loadUsersMap();
+
+        if (!username || !users[username]) {
+            setBoxMessage('resetPwFeedback', 'Không tìm thấy tài khoản này trên thiết bị!', 'error');
+            return;
+        }
+        if (!isValidGmailAddress(gmail)) {
+            setBoxMessage('resetPwFeedback', 'Vui lòng nhập đúng địa chỉ @gmail.com!', 'error');
+            return;
+        }
+        const registeredGmail = (users[username].gmail || '').trim().toLowerCase();
+        if (!registeredGmail) {
+            setBoxMessage('resetPwFeedback', 'Tài khoản này chưa liên kết Gmail! Hãy mở "Xác minh Gmail" trước.', 'error');
+            return;
+        }
+        if (registeredGmail !== gmail) {
+            setBoxMessage('resetPwFeedback', 'Gmail nhập vào không khớp với Gmail đã đăng ký của tài khoản!', 'error');
+            return;
+        }
+
+        const code = generateSixDigitOtp();
+        pendingGmailResetOtp = {
+            username,
+            gmail,
+            code,
+            expiresAt: Date.now() + 5 * 60 * 1000
+        };
+
+        const preview = document.getElementById('resetPwOtpPreview');
+        preview.style.display = 'block';
+        preview.innerHTML = `🔑 Mã đổi mật khẩu gửi tới <b>${escapeHtml(gmail)}</b>: <span class="otp-code-highlight">${code}</span> <span style="color:#94a3b8;">(Hiệu lực 5 phút)</span>`;
+        setBoxMessage('resetPwFeedback', `Đã gửi mã xác minh đổi mật khẩu tới ${gmail}!`, 'success');
+    }
+
+    async function confirmResetPasswordWithGmail() {
+        clearBoxMessage('resetPwFeedback');
+        const username = document.getElementById('resetPwUsernameInput').value.trim().toLowerCase();
+        const gmail = document.getElementById('resetPwGmailInput').value.trim().toLowerCase();
+        const code = document.getElementById('resetPwOtpInput').value.trim();
+        const newPw = document.getElementById('resetNewPasswordInput').value;
+        const confirmPw = document.getElementById('resetConfirmPasswordInput').value;
+
+        if (!pendingGmailResetOtp || Date.now() > pendingGmailResetOtp.expiresAt) {
+            setBoxMessage('resetPwFeedback', 'Mã xác minh đã hết hạn hoặc chưa gửi! Bấm "Gửi mã Gmail" trước.', 'error');
+            return;
+        }
+        if (pendingGmailResetOtp.username !== username || pendingGmailResetOtp.gmail !== gmail) {
+            setBoxMessage('resetPwFeedback', 'Thông tin tài khoản hoặc Gmail không khớp với mã đã gửi!', 'error');
+            return;
+        }
+        if (code !== pendingGmailResetOtp.code) {
+            setBoxMessage('resetPwFeedback', 'Mã xác minh 6 số không đúng!', 'error');
+            return;
+        }
+        if (!newPw || newPw.length < 4) {
+            setBoxMessage('resetPwFeedback', 'Mật khẩu mới phải có ít nhất 4 ký tự!', 'error');
+            return;
+        }
+        if (newPw !== confirmPw) {
+            setBoxMessage('resetPwFeedback', 'Mật khẩu mới nhập lại không khớp!', 'error');
+            return;
+        }
+
+        const users = loadUsersMap();
+        if (!users[username]) {
+            setBoxMessage('resetPwFeedback', 'Tài khoản không tồn tại!', 'error');
+            return;
+        }
+
+        users[username].pwHash = await hashPasswordText(newPw);
+        users[username].passwordUpdatedAt = new Date().toLocaleString('vi-VN');
+        saveUsersMap(users);
+        pendingGmailResetOtp = null;
+
+        setBoxMessage('resetPwFeedback', `✅ Đã đổi mật khẩu thành công cho tài khoản @${username} qua Gmail!`, 'success');
+        showStatus(`🔑 Đã đổi mật khẩu tài khoản @${username} bằng xác minh Gmail!`, 'success');
+    }
+
+
+    // ==========================================
+    // 0C. MODAL ĐỔI MK (3 GẠCH) & CHUÔNG THÔNG BÁO
+    // ==========================================
+    const ANNOUNCEMENTS_STORAGE_KEY = 'bothotwar_announcements_v14';
+    const READ_ANNOUNCEMENTS_KEY = 'bothotwar_read_announcements_v14';
+
+    function openChangePasswordModal() {
+        syncChangePassTabInputs();
+        document.getElementById('changePasswordModal').style.display = 'flex';
+    }
+
+    function closeChangePasswordModal() {
+        document.getElementById('changePasswordModal').style.display = 'none';
+    }
+
+    function loadAnnouncements() {
+        try {
+            const raw = localStorage.getItem(ANNOUNCEMENTS_STORAGE_KEY);
+            const arr = raw ? JSON.parse(raw) : [];
+            return Array.isArray(arr) ? arr : [];
+        } catch (e) {
+            return [];
+        }
+    }
+
+    function saveAnnouncements(arr) {
+        localStorage.setItem(ANNOUNCEMENTS_STORAGE_KEY, JSON.stringify(arr));
+        refreshBellBadge();
+    }
+
+    function loadReadIds() {
+        try {
+            const raw = localStorage.getItem(READ_ANNOUNCEMENTS_KEY);
+            const arr = raw ? JSON.parse(raw) : [];
+            return new Set(Array.isArray(arr) ? arr : []);
+        } catch (e) {
+            return new Set();
+        }
+    }
+
+    function saveReadIds(setObj) {
+        localStorage.setItem(READ_ANNOUNCEMENTS_KEY, JSON.stringify(Array.from(setObj)));
+        refreshBellBadge();
+    }
+
+    function canPostAnnouncement() {
+        if (!currentAccount) return false;
+        const u = String(currentAccount.username || '').toLowerCase();
+        return isAdminAccount(currentAccount) || u === 'minh' || u.includes('minh');
+    }
+
+    function refreshBellBadge() {
+        const list = loadAnnouncements();
+        const readSet = loadReadIds();
+        const unread = list.filter(item => !readSet.has(String(item.id))).length;
+        const dot = document.getElementById('bellUnreadBadge');
+        const drawerBadge = document.getElementById('drawerBellCountBadge');
+        if (dot) {
+            if (unread > 0) {
+                dot.style.display = 'inline-flex';
+                dot.innerText = unread > 99 ? '99+' : String(unread);
+            } else {
+                dot.style.display = 'none';
+            }
+        }
+        if (drawerBadge) {
+            drawerBadge.innerText = unread > 0 ? `${unread} mới` : `${list.length} tin`;
+            drawerBadge.className = unread > 0 ? 'badge badge-checking' : 'badge badge-unknown';
+        }
+    }
+
+    function openBellModal() {
+        const composer = document.getElementById('bellSenderComposer');
+        if (composer) {
+            composer.style.display = canPostAnnouncement() ? 'block' : 'none';
+        }
+        clearBoxMessage('announceFeedback');
+        renderBellAnnouncements();
+        document.getElementById('bellNoticeModal').style.display = 'flex';
+    }
+
+    function closeBellModal() {
+        document.getElementById('bellNoticeModal').style.display = 'none';
+    }
+
+    function publishAnnouncement() {
+        clearBoxMessage('announceFeedback');
+        const titleEl = document.getElementById('announceTitleInput');
+        const bodyEl = document.getElementById('announceBodyInput');
+        const title = (titleEl ? titleEl.value : '').trim() || 'Thông báo từ Minh';
+        const body = (bodyEl ? bodyEl.value : '').trim();
+
+        if (!body) {
+            setBoxMessage('announceFeedback', 'Vui lòng nhập nội dung thông báo!', 'error');
+            return;
+        }
+
+        const list = loadAnnouncements();
+        const newItem = {
+            id: String(Date.now()),
+            title: title,
+            body: body,
+            sender: (currentAccount && (currentAccount.displayName || currentAccount.username)) || 'Minh',
+            time: new Date().toLocaleString('vi-VN')
+        };
+        list.unshift(newItem);
+        saveAnnouncements(list);
+
+        if (titleEl) titleEl.value = '';
+        if (bodyEl) bodyEl.value = '';
+        setBoxMessage('announceFeedback', '✅ Đã gửi thông báo lên chuông cho mọi người!', 'success');
+        renderBellAnnouncements();
+    }
+
+    function deleteAnnouncement(id) {
+        if (!canPostAnnouncement()) return;
+        const list = loadAnnouncements().filter(item => String(item.id) !== String(id));
+        saveAnnouncements(list);
+        renderBellAnnouncements();
+    }
+
+    function markAllAnnouncementsRead() {
+        const list = loadAnnouncements();
+        const readSet = loadReadIds();
+        list.forEach(item => readSet.add(String(item.id)));
+        saveReadIds(readSet);
+        renderBellAnnouncements();
+    }
+
+    function renderBellAnnouncements() {
+        const listEl = document.getElementById('bellAnnouncementsList');
+        if (!listEl) return;
+        const list = loadAnnouncements();
+        const readSet = loadReadIds();
+        const canManage = canPostAnnouncement();
+
+        listEl.innerHTML = '';
+        if (list.length === 0) {
+            listEl.innerHTML = '<div style="text-align:center; color:#94a3b8; padding:16px;">Chưa có thông báo nào được gửi.</div>';
+            refreshBellBadge();
+            return;
+        }
+
+        list.forEach(item => {
+            const isUnread = !readSet.has(String(item.id));
+            const card = document.createElement('div');
+            card.className = 'announce-card' + (isUnread ? ' unread' : '');
+            card.onclick = () => {
+                if (!readSet.has(String(item.id))) {
+                    readSet.add(String(item.id));
+                    saveReadIds(readSet);
+                    card.classList.remove('unread');
+                }
+            };
+            card.innerHTML = `
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
+                    <div class="announce-title">${escapeHtml(item.title)} ${isUnread ? '<span class="badge badge-checking" style="margin-left:4px;">Mới</span>' : ''}</div>
+                    ${canManage ? `<button type="button" class="btn-mini danger" onclick="event.stopPropagation(); deleteAnnouncement('${escapeHtml(String(item.id))}')">Xóa</button>` : ''}
+                </div>
+                <div class="announce-body">${escapeHtml(item.body)}</div>
+                <div class="announce-meta">
+                    <span>Người gửi: <b style="color:#e2e8f0;">${escapeHtml(item.sender || 'Minh')}</b></span>
+                    <span>${escapeHtml(item.time || '')}</span>
+                </div>
+            `;
+            listEl.appendChild(card);
+        });
+        refreshBellBadge();
+    }
+
+    // ==========================================
+    // 1. DỮ LIỆU MẶC ĐỊNH CŨ (BOT + NHÓM)
+    // ==========================================
+    const DEFAULT_BOT_TOKENS = [
+        "9047226180:AAEY2CyyjjhsBfJDvH5qVotMde9aNr7WRuk",
+        "9128121116:AAFiIy1O56QepHftnqezWLDnS_h2fbvjvEs",
+        "9009517675:AAGhQGXZAFMnUZsuqBKEK_xlwU6JVtqcG1o",
+        "9297317445:AAFEktO3tqDOjEYtZQw9KIzmrdi-q8ktrxM"
+    ];
+
+    const DEFAULT_GROUPS = [
+        { id: "-1003324238197", name: "Nhóm 1", selected: true },
+        { id: "-1003732990426", name: "Nhóm 2", selected: true },
+        { id: "-1004324662735", name: "Nhóm 3", selected: true },
+        { id: "-1004327353553", name: "Nhóm 4", selected: true },
+        { id: "-1003379221243", name: "Nhóm 5", selected: true },
+        { id: "-1004291014849", name: "Nhóm 6", selected: true },
+        { id: "-1003300501687", name: "Nhóm 7", selected: true }
+    ];
+
+    let botList = [];
+    let groupList = [];
+    let savedTemplates = [];
+    let stopRequested = false;
+    let dynamicPenaltyDelayMs = 0;
+    let deferredInstallPrompt = null;
+
+    // ==========================================
+    // 2. PWA MANIFEST & CÀI ĐẶT VỀ MÁY
+    // ==========================================
+    function initPwaSupport() {
+        const svgIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+            <defs>
+                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#0ea5e9"/>
+                    <stop offset="100%" stop-color="#ec4899"/>
+                </linearGradient>
+            </defs>
+            <rect width="192" height="192" rx="42" fill="url(#g)"/>
+            <text x="96" y="116" font-family="Arial,sans-serif" font-size="68" font-weight="bold" fill="#ffffff" text-anchor="middle">v13</text>
+        </svg>`;
+        const iconDataUrl = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgIcon);
+        document.getElementById('dynamicIcon').href = iconDataUrl;
+        document.getElementById('dynamicAppleIcon').href = iconDataUrl;
+
+        const manifestObj = {
+            name: "bothotwarbytminh v14_4",
+            short_name: "BotHotWar v14_4",
+            start_url: window.location.href,
+            display: "standalone",
+            background_color: "#0f172a",
+            theme_color: "#0f172a",
+            icons: [
+                {
+                    src: iconDataUrl,
+                    sizes: "192x192",
+                    type: "image/svg+xml",
+                    purpose: "any maskable"
+                }
+            ]
+        };
+        try {
+            const blob = new Blob([JSON.stringify(manifestObj)], { type: 'application/manifest+json' });
+            document.getElementById('dynamicManifest').href = URL.createObjectURL(blob);
+        } catch (e) {}
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            const btn = document.getElementById('pwaInstallBtn');
+            if (btn) btn.innerHTML = '📲 Cài App Ngay';
+        });
+    }
+
+    async function triggerInstallApp() {
+        if (deferredInstallPrompt) {
+            deferredInstallPrompt.prompt();
+            const choiceResult = await deferredInstallPrompt.userChoice;
+            if (choiceResult && choiceResult.outcome === 'accepted') {
+                showStatus('✅ Đã cài đặt ứng dụng về màn hình chính!', 'success');
+            }
+            deferredInstallPrompt = null;
+        } else {
+            document.getElementById('installHelpModal').style.display = 'flex';
+        }
+    }
+
+    function closeInstallModal() {
+        document.getElementById('installHelpModal').style.display = 'none';
+    }
+
+    function downloadOfflineHtml() {
+        const fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+        const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'bothotwarbytminh-v14_4.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showStatus('💾 Đã tải file bothotwarbytminh-v14_4.html về máy!', 'success');
+    }
+
+    // ==========================================
+    // 3. ĐIỀU HƯỚNG TAB & KHỞI TẠO DỮ LIỆU
+    // ==========================================
+    function switchTab(tabId, btnEl) {
+        if (tabId === 'tabChangePass') { openChangePasswordModal(); return; }
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        if (btnEl) btnEl.classList.add('active');
+        if (tabId === 'tabChangePass') {
+            syncChangePassTabInputs();
+        }
+    }
+
+    function syncChangePassTabInputs() {
+        const users = loadUsersMap();
+        const activeUser = currentAccount ? currentAccount.username : '';
+        const badge = document.getElementById('cpAccountBadge');
+        const u1 = document.getElementById('cpUsernameInput');
+        const u2 = document.getElementById('cpOtpUsernameInput');
+        const g2 = document.getElementById('cpOtpGmailInput');
+        if (badge) {
+            badge.innerText = activeUser ? `@${activeUser}` : 'Chưa đăng nhập';
+        }
+        if (u1 && activeUser && !u1.value) u1.value = activeUser;
+        if (u2 && activeUser && !u2.value) u2.value = activeUser;
+        if (g2 && activeUser && users[activeUser] && users[activeUser].gmail && !g2.value) {
+            g2.value = users[activeUser].gmail;
+        }
+    }
+
+    async function handleTabChangePassCurrent() {
+        clearBoxMessage('cpCurrentFeedback');
+        const uname = document.getElementById('cpUsernameInput').value.trim().toLowerCase();
+        const currPw = document.getElementById('cpCurrentPassInput').value;
+        const newPw = document.getElementById('cpNewPassInput').value;
+        const confPw = document.getElementById('cpConfirmPassInput').value;
+        const users = loadUsersMap();
+
+        if (!uname || !users[uname]) {
+            setBoxMessage('cpCurrentFeedback', 'Không tìm thấy tài khoản này!', 'error');
+            return;
+        }
+        const currHash = await hashPasswordText(currPw);
+        if (users[uname].pwHash !== currHash) {
+            setBoxMessage('cpCurrentFeedback', 'Mật khẩu hiện tại không đúng!', 'error');
+            return;
+        }
+        if (!newPw || newPw.length < 4) {
+            setBoxMessage('cpCurrentFeedback', 'Mật khẩu mới phải có ít nhất 4 ký tự!', 'error');
+            return;
+        }
+        if (newPw !== confPw) {
+            setBoxMessage('cpCurrentFeedback', 'Mật khẩu mới nhập lại không khớp!', 'error');
+            return;
+        }
+        users[uname].pwHash = await hashPasswordText(newPw);
+        users[uname].passwordUpdatedAt = new Date().toLocaleString('vi-VN');
+        saveUsersMap(users);
+        document.getElementById('cpCurrentPassInput').value = '';
+        document.getElementById('cpNewPassInput').value = '';
+        document.getElementById('cpConfirmPassInput').value = '';
+        setBoxMessage('cpCurrentFeedback', `✅ Đã đổi mật khẩu tài khoản @${uname} thành công!`, 'success');
+        showStatus(`🔑 Đã cập nhật mật khẩu cho @${uname}!`, 'success');
+    }
+
+    function sendTabResetOtp() {
+        clearBoxMessage('cpOtpFeedback');
+        const username = document.getElementById('cpOtpUsernameInput').value.trim().toLowerCase();
+        const gmail = document.getElementById('cpOtpGmailInput').value.trim().toLowerCase();
+        const users = loadUsersMap();
+
+        if (!username || !users[username]) {
+            setBoxMessage('cpOtpFeedback', 'Không tìm thấy tài khoản này!', 'error');
+            return;
+        }
+        if (!isValidGmailAddress(gmail)) {
+            setBoxMessage('cpOtpFeedback', 'Nhập đúng địa chỉ @gmail.com!', 'error');
+            return;
+        }
+        const regGmail = (users[username].gmail || '').trim().toLowerCase();
+        if (!regGmail) {
+            setBoxMessage('cpOtpFeedback', 'Tài khoản chưa liên kết Gmail! Bấm "Xác minh Gmail" trước.', 'error');
+            return;
+        }
+        if (regGmail !== gmail) {
+            setBoxMessage('cpOtpFeedback', 'Gmail không khớp với tài khoản đã đăng ký!', 'error');
+            return;
+        }
+
+        const code = generateSixDigitOtp();
+        pendingGmailResetOtp = {
+            username,
+            gmail,
+            code,
+            expiresAt: Date.now() + 5 * 60 * 1000
+        };
+        const preview = document.getElementById('cpOtpPreviewBox');
+        preview.style.display = 'block';
+        preview.innerHTML = `🔑 Mã OTP gửi tới <b>${escapeHtml(gmail)}</b>: <span class="otp-code-highlight">${code}</span> <span style="color:#94a3b8;">(5 phút)</span>`;
+        setBoxMessage('cpOtpFeedback', `Đã gửi mã OTP tới ${gmail}!`, 'success');
+    }
+
+    async function confirmTabResetOtp() {
+        clearBoxMessage('cpOtpFeedback');
+        const username = document.getElementById('cpOtpUsernameInput').value.trim().toLowerCase();
+        const gmail = document.getElementById('cpOtpGmailInput').value.trim().toLowerCase();
+        const code = document.getElementById('cpOtpCodeInput').value.trim();
+        const newPw = document.getElementById('cpOtpNewPassInput').value;
+        const confPw = document.getElementById('cpOtpConfirmPassInput').value;
+
+        if (!pendingGmailResetOtp || Date.now() > pendingGmailResetOtp.expiresAt) {
+            setBoxMessage('cpOtpFeedback', 'Mã OTP hết hạn hoặc chưa gửi!', 'error');
+            return;
+        }
+        if (pendingGmailResetOtp.username !== username || pendingGmailResetOtp.gmail !== gmail) {
+            setBoxMessage('cpOtpFeedback', 'Tài khoản hoặc Gmail không khớp mã OTP!', 'error');
+            return;
+        }
+        if (code !== pendingGmailResetOtp.code) {
+            setBoxMessage('cpOtpFeedback', 'Mã OTP 6 số không đúng!', 'error');
+            return;
+        }
+        if (!newPw || newPw.length < 4) {
+            setBoxMessage('cpOtpFeedback', 'Mật khẩu mới tối thiểu 4 ký tự!', 'error');
+            return;
+        }
+        if (newPw !== confPw) {
+            setBoxMessage('cpOtpFeedback', 'Mật khẩu nhập lại không khớp!', 'error');
+            return;
+        }
+
+        const users = loadUsersMap();
+        if (!users[username]) {
+            setBoxMessage('cpOtpFeedback', 'Tài khoản không tồn tại!', 'error');
+            return;
+        }
+        users[username].pwHash = await hashPasswordText(newPw);
+        users[username].passwordUpdatedAt = new Date().toLocaleString('vi-VN');
+        saveUsersMap(users);
+        pendingGmailResetOtp = null;
+        document.getElementById('cpOtpCodeInput').value = '';
+        document.getElementById('cpOtpNewPassInput').value = '';
+        document.getElementById('cpOtpConfirmPassInput').value = '';
+        setBoxMessage('cpOtpFeedback', `✅ Đã đổi mật khẩu @${username} bằng OTP thành công!`, 'success');
+        showStatus(`🔑 Đã đổi mật khẩu @${username} qua OTP Gmail!`, 'success');
+    }
+
+    function buildDefaultBots() {
+        return DEFAULT_BOT_TOKENS.map((token, idx) => ({
+            token: token,
+            username: '',
+            firstName: `Bot ${idx + 1}`,
+            selected: true,
+            status: 'unknown',
+            statusText: 'Chưa check',
+            starters: [],
+            showStarters: false,
+            checkingStarters: false
+        }));
+    }
+
+    function mergeWithDefaults(savedArr, defaultsArr, keyFn) {
+        const merged = Array.isArray(savedArr) ? [...savedArr] : [];
+        const existingKeys = new Set(merged.map(keyFn));
+        defaultsArr.forEach(defItem => {
+            const k = keyFn(defItem);
+            if (!existingKeys.has(k)) {
+                merged.push({ ...defItem });
+                existingKeys.add(k);
+            }
+        });
+        return merged;
+    }
+
+    function restoreDefaultData() {
+        botList = mergeWithDefaults(botList, buildDefaultBots(), b => b.token);
+        groupList = mergeWithDefaults(groupList, DEFAULT_GROUPS, g => String(g.id));
+        saveBotsToStorage();
+        saveGroupsToStorage();
+        renderBots();
+        renderGroups();
+        checkAllBots();
+        showStatus('♻️ Đã nạp lại đầy đủ dữ liệu bot & nhóm mặc định cũ!', 'success');
+    }
+
+    function reloadWorkspaceForCurrentAccount() {
+        try {
+            const savedBots = localStorage.getItem(getBotStorageKey());
+            botList = savedBots ? JSON.parse(savedBots) : [];
+        } catch (e) { botList = []; }
+        botList = mergeWithDefaults(botList, buildDefaultBots(), b => b.token).map(b => ({
+            starters: [],
+            showStarters: false,
+            checkingStarters: false,
+            ...b
+        }));
+        renderBots();
+        checkAllBotsParallel();
+
+        try {
+            const savedGroups = localStorage.getItem(getGroupStorageKey());
+            groupList = savedGroups ? JSON.parse(savedGroups) : [];
+        } catch (e) { groupList = []; }
+        groupList = mergeWithDefaults(groupList, DEFAULT_GROUPS, g => String(g.id));
+        renderGroups();
+
+        try {
+            const rawTemplates = localStorage.getItem(getTemplateStorageKey());
+            savedTemplates = rawTemplates ? JSON.parse(rawTemplates) : [];
+        } catch (e) { savedTemplates = []; }
+        renderSavedTemplates();
+
+        syncFromSecondsInput();
+        updateActiveSummaryInline();
+    }
+
+    window.onload = async function() {
+        initPwaSupport();
+        refreshBellBadge();
+        await ensureAdminAccountSeeded();
+
+        let restoredSession = null;
+        try {
+            const rawSess = localStorage.getItem(SESSION_STORAGE_KEY);
+            if (rawSess) restoredSession = JSON.parse(rawSess);
+        } catch (e) { restoredSession = null; }
+
+        if (restoredSession && restoredSession.username) {
+            currentAccount = {
+                username: String(restoredSession.username).trim().toLowerCase(),
+                displayName: isAdminAccount(restoredSession.username)
+                    ? 'Admin Tân Minh'
+                    : (restoredSession.displayName || restoredSession.username),
+                isAdmin: isAdminAccount(restoredSession.username)
+            };
+            updateAccountTopbarButton();
+            applyAdminTabVisibility();
+            reloadWorkspaceForCurrentAccount();
+        } else {
+            updateAccountTopbarButton();
+            applyAdminTabVisibility();
+            reloadWorkspaceForCurrentAccount();
+            setAuthMode('login');
+            showAuthOverlay(ADMIN_USERNAME);
+        }
+    };
+
+    function saveBotsToStorage() {
+        const cleanBots = botList.map(({ checkingStarters, ...rest }) => rest);
+        localStorage.setItem(getBotStorageKey(), JSON.stringify(cleanBots));
+    }
+
+    function saveGroupsToStorage() {
+        localStorage.setItem(getGroupStorageKey(), JSON.stringify(groupList));
+    }
+
+    function saveTemplatesToStorage() {
+        localStorage.setItem(getTemplateStorageKey(), JSON.stringify(savedTemplates));
+    }
+
+    function updateActiveSummaryInline() {
+        const activeB = botList.filter(b => b.selected && b.status !== 'dead').length;
+        const activeG = groupList.filter(g => g.selected).length;
+        const el = document.getElementById('activeSummaryInline');
+        if (el) el.innerText = `${activeB} bot • ${activeG} nhóm`;
+    }
+
+    // ==========================================
+    // 4. CHỈNH SPEED THEO GIÂY (0.01s, 0.02s, 0.05s...)
+    // ==========================================
+    function getDelayMsFromSeconds() {
+        const raw = String(document.getElementById('delaySec').value || '0').replace(',', '.');
+        const sec = Math.max(0, parseFloat(raw) || 0);
+        return sec * 1000;
+    }
+
+    function syncFromSecondsInput() {
+        const raw = String(document.getElementById('delaySec').value || '0').replace(',', '.');
+        const sec = Math.max(0, parseFloat(raw) || 0);
+        const ms = sec * 1000;
+        const hint = document.getElementById('speedUnitHint');
+        if (hint) {
+            if (sec === 0) {
+                hint.innerText = '= 0 ms (Bắn không độ trễ)';
+            } else {
+                const rate = Math.round(1 / sec);
+                hint.innerText = `= ${Number(ms.toFixed(4))} ms (~${rate} nhịp/giây)`;
+            }
+        }
+        updateSpeedBadge();
+    }
+
+    function setSpeedSeconds(secVal, burst, concurrency, loops) {
+        document.getElementById('delaySec').value = secVal;
+        document.getElementById('burstCount').value = burst;
+        document.getElementById('maxConcurrencyInput').value = concurrency;
+        if (loops) document.getElementById('totalLoops').value = loops;
+        syncFromSecondsInput();
+    }
+
+    function updateSpeedBadge() {
+        const raw = String(document.getElementById('delaySec').value || '0').replace(',', '.');
+        const sec = Math.max(0, parseFloat(raw) || 0);
+        const ms = Number((sec * 1000).toFixed(3));
+        const b = Math.max(1, parseInt(document.getElementById('burstCount').value, 10) || 1);
+        const c = Math.max(1, parseInt(document.getElementById('maxConcurrencyInput').value, 10) || 1);
+        const badge = document.getElementById('speedSummaryBadge');
+        if (badge) {
+            badge.innerText = `${sec}s (${ms}ms) • ${b} tin/lần • ${c} luồng`;
+        }
+    }
+
+    // ==========================================
+    // 5. LƯU NGÔN TREO (TEMPLATES)
+    // ==========================================
+    function saveCurrentMessageAsTemplate() {
+        const msg = document.getElementById('message').value.trim();
+        const titleInput = document.getElementById('saveTemplateTitle');
+        if (!msg) {
+            showStatus('⚠️ Vui lòng nhập nội dung tin nhắn trước khi lưu ngôn treo!', 'error');
+            return;
+        }
+        const title = titleInput.value.trim() || `Ngôn treo #${savedTemplates.length + 1}`;
+        savedTemplates.unshift({
+            id: Date.now(),
+            title: title,
+            content: msg,
+            createdAt: new Date().toLocaleString('vi-VN')
+        });
+        titleInput.value = '';
+        saveTemplatesToStorage();
+        renderSavedTemplates();
+        showStatus(`📌 Đã lưu "${title}" vào kho Ngôn Treo!`, 'success');
+    }
+
+    function addNewTemplateFromTab() {
+        const titleEl = document.getElementById('newTemplateNameInput');
+        const contentEl = document.getElementById('newTemplateContentInput');
+        const content = contentEl.value.trim();
+        if (!content) {
+            showStatus('⚠️ Vui lòng nhập nội dung ngôn treo!', 'error');
+            return;
+        }
+        const title = titleEl.value.trim() || `Ngôn treo #${savedTemplates.length + 1}`;
+        savedTemplates.unshift({
+            id: Date.now(),
+            title: title,
+            content: content,
+            createdAt: new Date().toLocaleString('vi-VN')
+        });
+        titleEl.value = '';
+        contentEl.value = '';
+        saveTemplatesToStorage();
+        renderSavedTemplates();
+        showStatus(`💾 Đã lưu ngôn treo "${title}"!`, 'success');
+    }
+
+    function useSavedTemplate(index) {
+        const tpl = savedTemplates[index];
+        if (!tpl) return;
+        const msgBox = document.getElementById('message');
+        msgBox.value = tpl.content;
+
+        const lines = tpl.content.split(/\r?\n/).map(l => l.trim()).filter(l => l !== '');
+        if (lines.length > 1) {
+            document.getElementById('txtOptions').style.display = 'flex';
+            document.getElementById('totalLoops').value = lines.length;
+            document.getElementById('sendByLineMode').checked = true;
+        } else {
+            document.getElementById('txtOptions').style.display = 'none';
+        }
+
+        const firstTabBtn = document.querySelector('.nav-tabs .tab-btn');
+        switchTab('tabDispatch', firstTabBtn);
+        showStatus(`✅ Đã nạp ngôn treo "${tpl.title}" vào khung gửi!`, 'success');
+    }
+
+    function deleteSavedTemplate(index) {
+        savedTemplates.splice(index, 1);
+        saveTemplatesToStorage();
+        renderSavedTemplates();
+    }
+
+    function clearAllTemplates() {
+        if (savedTemplates.length === 0) return;
+        if (confirm('Xóa toàn bộ kho ngôn treo đã lưu?')) {
+            savedTemplates = [];
+            saveTemplatesToStorage();
+            renderSavedTemplates();
+        }
+    }
+
+    function renderSavedTemplates() {
+        const container = document.getElementById('savedTemplatesContainer');
+        document.getElementById('savedTemplateCount').innerText = savedTemplates.length;
+        document.getElementById('tabSavedBadge').innerText = savedTemplates.length;
+        container.innerHTML = '';
+
+        if (savedTemplates.length === 0) {
+            container.innerHTML = '<div style="text-align:center; color:#94a3b8; padding:14px;">Chưa có ngôn treo nào được lưu.</div>';
+            return;
+        }
+
+        savedTemplates.forEach((tpl, idx) => {
+            const card = document.createElement('div');
+            card.className = 'template-card';
+            card.innerHTML = `
+                <div style="flex: 1; overflow: hidden;">
+                    <div class="meta-title">📌 ${escapeHtml(tpl.title)}</div>
+                    <div class="template-preview">${escapeHtml(tpl.content)}</div>
+                    <div class="meta-sub" style="margin-top: 2px;">${escapeHtml(tpl.createdAt || '')}</div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 4px; flex-shrink: 0;">
+                    <button type="button" class="btn btn-blue" style="padding: 4px 9px; font-size: 11px;" onclick="useSavedTemplate(${idx})">Dùng ngay</button>
+                    <button type="button" class="btn-mini danger" onclick="deleteSavedTemplate(${idx})">Xóa</button>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    // ==========================================
+    // 6. QUẢN LÝ BOT + CHECK AI ĐÃ START HIỆN ID
+    // ==========================================
+    function maskToken(token) {
+        if (!token) return '';
+        const parts = token.split(':');
+        if (parts.length === 2) {
+            const secret = parts[1];
+            const tail = secret.length > 6 ? secret.slice(-6) : secret;
+            return `${parts[0]}:***${tail}`;
+        }
+        return token.slice(0, 8) + '***';
+    }
+
+    function renderBots() {
+        const container = document.getElementById('botListContainer');
+        const activeBots = botList.filter(b => b.selected && b.status !== 'dead');
+        document.getElementById('selectedBotCount').innerText = activeBots.length;
+        document.getElementById('totalBotCount').innerText = botList.length;
+        updateActiveSummaryInline();
+        container.innerHTML = '';
+
+        if (botList.length === 0) {
+            container.innerHTML = '<div style="text-align:center; color:#94a3b8; padding:12px;">Chưa có bot nào. Hãy dán token bot ở trên!</div>';
+        } else {
+            botList.forEach((bot, index) => {
+                const isSelectable = bot.status !== 'dead';
+                const isChecked = Boolean(bot.selected && isSelectable);
+
+                let badgeClass = 'badge-unknown';
+                if (bot.status === 'live') badgeClass = 'badge-live';
+                else if (bot.status === 'dead') badgeClass = 'badge-dead';
+                else if (bot.status === 'checking') badgeClass = 'badge-checking';
+
+                const displayTitle = bot.username
+                    ? `${escapeHtml(bot.firstName || 'Bot')} (@${escapeHtml(bot.username)})`
+                    : escapeHtml(bot.firstName || `Bot ${index + 1}`);
+
+                const startersCount = Array.isArray(bot.starters) ? bot.starters.length : 0;
+                const checkStartLabel = bot.checkingStarters
+                    ? '⏳ Đang quét...'
+                    : `👤 Check Start (${startersCount})`;
+
+                const wrapper = document.createElement('div');
+                wrapper.style.display = 'flex';
+                wrapper.style.flexDirection = 'column';
+
+                const row = document.createElement('div');
+                row.className = 'item-card' + (isChecked ? ' selected' : '');
+                row.innerHTML = `
+                    <label>
+                        <input type="checkbox" ${isChecked ? 'checked' : ''} ${isSelectable ? '' : 'disabled'} onchange="toggleBotSelect(${index})">
+                        <div class="meta-col">
+                            <span class="meta-title">${displayTitle}</span>
+                            <span class="meta-sub">${escapeHtml(maskToken(bot.token))}</span>
+                        </div>
+                    </label>
+                    <span class="badge ${badgeClass}">${escapeHtml(bot.statusText || 'Chưa check')}</span>
+                    <button type="button" class="btn-mini" onclick="checkBotStarters(${index})" title="Check những người đã /start bot này và lấy ID">${checkStartLabel}</button>
+                    <button type="button" class="btn-mini" onclick="checkSingleBot(${index})" title="Check sống bot">Live</button>
+                    <span class="remove-btn" title="Xóa bot" onclick="removeBot(${index})">&times;</span>
+                `;
+                wrapper.appendChild(row);
+
+                if (bot.showStarters) {
+                    const drawer = document.createElement('div');
+                    drawer.className = 'starters-drawer';
+                    if (!bot.starters || bot.starters.length === 0) {
+                        drawer.innerHTML = `
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <span style="color:#94a3b8;">Chưa ghi nhận user nào mới /start trong hàng đợi gần đây của bot này.</span>
+                                <button type="button" class="btn-mini" onclick="toggleStarterDrawer(${index}, false)">Ẩn</button>
+                            </div>
+                        `;
+                    } else {
+                        let listHtml = `
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                                <b style="color:#38bdf8;">Danh sách đã /start (${bot.starters.length} người):</b>
+                                <button type="button" class="btn-mini" onclick="toggleStarterDrawer(${index}, false)">Ẩn</button>
+                            </div>
+                        `;
+                        bot.starters.forEach(u => {
+                            const uname = u.username ? `@${escapeHtml(u.username)}` : 'Không có @username';
+                            const fullName = escapeHtml(u.name || 'Người dùng');
+                            listHtml += `
+                                <div class="starter-row">
+                                    <div style="overflow:hidden;">
+                                        <div><b>${fullName}</b> <span style="color:#94a3b8;">(${uname})</span></div>
+                                        <div class="starter-uid">ID: ${escapeHtml(String(u.id))}</div>
+                                    </div>
+                                    <div style="display:flex; gap:4px; flex-shrink:0;">
+                                        <button type="button" class="btn-mini" onclick="copyText('${escapeHtml(String(u.id))}')">Copy ID</button>
+                                        <button type="button" class="btn-mini" onclick="applyStarterToTag('${escapeHtml(String(u.id))}', '${escapeHtml(u.username || '')}')">Tag</button>
+                                        <button type="button" class="btn-mini" onclick="addStarterAsTarget('${escapeHtml(String(u.id))}', '${escapeHtml(u.name || u.username || 'User')}')">+ Nhận tin</button>
+                                    </div>
+                                </div>
+                            `;
+                        });
+                        drawer.innerHTML = listHtml;
+                    }
+                    wrapper.appendChild(drawer);
+                }
+
+                container.appendChild(wrapper);
+            });
+        }
+
+        saveBotsToStorage();
+    }
+
+    function toggleStarterDrawer(index, state) {
+        if (!botList[index]) return;
+        botList[index].showStarters = state;
+        renderBots();
+    }
+
+    async function checkBotStarters(index) {
+        const bot = botList[index];
+        if (!bot) return;
+        bot.checkingStarters = true;
+        bot.showStarters = true;
+        renderBots();
+
+        try {
+            const res = await fetch(`https://api.telegram.org/bot${bot.token}/getUpdates?limit=100`);
+            const data = await res.json();
+
+            if (!data || !data.ok) {
+                const desc = (data && data.description) || 'Không thể lấy danh sách';
+                showStatus(`⚠️ ${bot.firstName}: ${desc}`, 'error');
+                bot.checkingStarters = false;
+                renderBots();
+                return;
+            }
+
+            const mapUsers = new Map();
+            if (Array.isArray(bot.starters)) {
+                bot.starters.forEach(item => mapUsers.set(String(item.id), item));
+            }
+
+            (data.result || []).forEach(upd => {
+                const msg = upd.message || upd.edited_message || (upd.callback_query && upd.callback_query.message);
+                const from = (upd.message && upd.message.from) ||
+                             (upd.edited_message && upd.edited_message.from) ||
+                             (upd.callback_query && upd.callback_query.from) ||
+                             (upd.my_chat_member && upd.my_chat_member.from);
+
+                if (from && !from.is_bot && from.id) {
+                    const uid = String(from.id);
+                    const fullName = [from.first_name, from.last_name].filter(Boolean).join(' ') || 'User';
+                    const isStartCmd = msg && typeof msg.text === 'string' && msg.text.trim().startsWith('/start');
+                    const isPrivateChat = msg && msg.chat && msg.chat.type === 'private';
+
+                    if (isStartCmd || isPrivateChat || !mapUsers.has(uid)) {
+                        mapUsers.set(uid, {
+                            id: uid,
+                            name: fullName,
+                            username: from.username || ''
+                        });
+                    }
+                }
+            });
+
+            bot.starters = Array.from(mapUsers.values());
+            bot.checkingStarters = false;
+            renderBots();
+            showStatus(`👤 Đã quét xong: tìm thấy ${bot.starters.length} người đã /start ${bot.username ? '@' + bot.username : bot.firstName}!`, 'success');
+        } catch (err) {
+            bot.checkingStarters = false;
+            renderBots();
+            showStatus('❌ Lỗi kết nối khi quét danh sách /start của bot!', 'error');
+        }
+    }
+
+    function copyText(txt) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(txt).then(() => {
+                showStatus(`📋 Đã copy ID: ${txt}`, 'success');
+            }).catch(() => showStatus(`ID: ${txt}`, 'success'));
+        } else {
+            showStatus(`ID: ${txt}`, 'success');
+        }
+    }
+
+    function applyStarterToTag(uid, username) {
+        document.getElementById('targetUserId').value = uid;
+        if (username) {
+            document.getElementById('targetUsername').value = username.startsWith('@') ? username : '@' + username;
+        }
+        const firstTabBtn = document.querySelector('.nav-tabs .tab-btn');
+        switchTab('tabDispatch', firstTabBtn);
+        showStatus(`🏷️ Đã gắn ID ${uid} vào ô Tag người dùng!`, 'success');
+    }
+
+    function addStarterAsTarget(uid, name) {
+        if (!groupList.some(g => String(g.id) === String(uid))) {
+            groupList.push({ id: String(uid), name: `User: ${name}`, selected: true });
+            renderGroups();
+            showStatus(`✅ Đã thêm ID ${uid} (${name}) vào danh sách nhận tin!`, 'success');
+        } else {
+            showStatus(`ℹ️ ID ${uid} đã có sẵn trong danh sách nhận tin.`, 'loading');
+        }
+    }
+
+    function addBotToken() {
+        const input = document.getElementById('newBotToken');
+        const token = input.value.trim();
+        if (!token) {
+            showStatus('Vui lòng nhập token bot!', 'error');
+            return;
+        }
+        if (!/^\d+:[A-Za-z0-9_-]{20,}$/.test(token)) {
+            showStatus('Định dạng token bot chưa đúng (dạng 123456:ABC...)!', 'error');
+            return;
+        }
+        if (botList.some(b => b.token === token)) {
+            showStatus('Token bot này đã có trong list bot!', 'error');
+            return;
+        }
+
+        botList.push({
+            token: token,
+            username: '',
+            firstName: `Bot ${botList.length + 1}`,
+            selected: true,
+            status: 'checking',
+            statusText: 'Check...',
+            starters: [],
+            showStarters: false,
+            checkingStarters: false
+        });
+        input.value = '';
+        renderBots();
+        checkSingleBot(botList.length - 1);
+    }
+
+    function toggleBotSelect(index) {
+        if (botList[index].status === 'dead') return;
+        botList[index].selected = !botList[index].selected;
+        renderBots();
+    }
+
+    function toggleSelectAllBots(state) {
+        botList.forEach(b => {
+            if (b.status !== 'dead') b.selected = state;
+        });
+        renderBots();
+    }
+
+    function removeBot(index) {
+        botList.splice(index, 1);
+        renderBots();
+    }
+
+    async function checkSingleBot(index) {
+        const bot = botList[index];
+        if (!bot) return;
+        bot.status = 'checking';
+        bot.statusText = 'Check...';
+        renderBots();
+
+        try {
+            const res = await fetch(`https://api.telegram.org/bot${bot.token}/getMe`);
+            const data = await res.json();
+            if (data && data.ok && data.result) {
+                bot.status = 'live';
+                bot.statusText = 'Live';
+                bot.username = data.result.username || '';
+                bot.firstName = data.result.first_name || `Bot ${index + 1}`;
+            } else {
+                bot.status = 'dead';
+                bot.statusText = 'Dead';
+                bot.selected = false;
+            }
+        } catch (err) {
+            bot.status = 'dead';
+            bot.statusText = 'Lỗi mạng';
+            bot.selected = false;
+        }
+        renderBots();
+    }
+
+    async function checkAllBotsParallel() {
+        await Promise.allSettled(botList.map((_, i) => checkSingleBot(i)));
+    }
+
+    function checkAllBots() {
+        checkAllBotsParallel();
+    }
+
+    function getSelectedDispatchBots() {
+        return botList.filter(b => b.selected && b.status !== 'dead');
+    }
+
+    // ==========================================
+    // 7. QUẢN LÝ NHÓM NHẬN TIN
+    // ==========================================
+    function renderGroups() {
+        const container = document.getElementById('groupContainer');
+        const selectedCount = groupList.filter(g => g.selected).length;
+        document.getElementById('groupCount').innerText = groupList.length;
+        document.getElementById('selectedCount').innerText = selectedCount;
+        document.getElementById('tabGroupBadge').innerText = `${selectedCount}/${groupList.length}`;
+        updateActiveSummaryInline();
+        container.innerHTML = '';
+
+        if (groupList.length === 0) {
+            container.innerHTML = '<div style="text-align:center; color:#94a3b8; padding:12px;">Chưa có nhóm nào. Hãy thêm ID ở trên!</div>';
+        } else {
+            groupList.forEach((group, index) => {
+                const item = document.createElement('div');
+                item.className = 'item-card' + (group.selected ? ' selected' : '');
+                const nameDisplay = group.name ? `<span style="color:#94a3b8; font-size:12px;">- ${escapeHtml(group.name)}</span>` : '';
+                item.innerHTML = `
+                    <label>
+                        <input type="checkbox" ${group.selected ? 'checked' : ''} onchange="toggleGroupSelect(${index})">
+                        <span class="meta-sub" style="color:#f8fafc; font-weight:700; font-size:12.5px;">${escapeHtml(group.id)}</span>
+                        ${nameDisplay}
+                    </label>
+                    <span class="remove-btn" title="Xóa ID này" onclick="removeGroupId(${index})">&times;</span>
+                `;
+                container.appendChild(item);
+            });
+        }
+        saveGroupsToStorage();
+    }
+
+    function toggleGroupSelect(index) {
+        groupList[index].selected = !groupList[index].selected;
+        renderGroups();
+    }
+
+    function toggleSelectAll(state) {
+        groupList.forEach(g => g.selected = state);
+        renderGroups();
+    }
+
+    function addGroupId() {
+        const idInput = document.getElementById('newGroupId');
+        const nameInput = document.getElementById('newGroupName');
+        const id = idInput.value.trim();
+        const name = nameInput.value.trim();
+        if (!id) {
+            showStatus('Vui lòng nhập ID nhóm hoặc User ID!', 'error');
+            return;
+        }
+        if (!groupList.some(g => g.id === id)) {
+            groupList.push({ id: id, name: name, selected: true });
+            renderGroups();
+            idInput.value = '';
+            nameInput.value = '';
+            showStatus('✅ Đã thêm ID mới!', 'success');
+        } else {
+            showStatus('ID này đã tồn tại!', 'error');
+        }
+    }
+
+    function removeGroupId(index) {
+        groupList.splice(index, 1);
+        renderGroups();
+    }
+
+    function clearAllGroups() {
+        if (confirm('Xóa toàn bộ danh sách ID nhóm?')) {
+            groupList = [];
+            renderGroups();
+        }
+    }
+
+    function importIdsFromTxt(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const lines = e.target.result.split(/\r?\n/).map(l => l.trim()).filter(l => l !== '');
+            let added = 0;
+            lines.forEach(line => {
+                const parts = line.split('|');
+                const id = parts[0].trim();
+                const name = parts[1] ? parts[1].trim() : '';
+                if (id && !groupList.some(g => g.id === id)) {
+                    groupList.push({ id: id, name: name, selected: true });
+                    added++;
+                }
+            });
+            renderGroups();
+            showStatus(`✅ Đã nạp thêm ${added} ID từ "${file.name}"!`, 'success');
+        };
+        reader.readAsText(file, 'UTF-8');
+        event.target.value = '';
+    }
+
+    function importMessageFromTxt(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const content = e.target.result;
+            document.getElementById('message').value = content;
+            const lines = content.split(/\r?\n/).map(l => l.trim()).filter(l => l !== '');
+            if (lines.length > 1) {
+                document.getElementById('txtOptions').style.display = 'flex';
+                document.getElementById('totalLoops').value = lines.length;
+                document.getElementById('sendByLineMode').checked = true;
+                showStatus(`✅ Đã nạp ${lines.length} dòng ngôn từ "${file.name}"!`, 'success');
+            } else {
+                document.getElementById('txtOptions').style.display = 'none';
+                showStatus(`✅ Đã nạp nội dung từ "${file.name}"!`, 'success');
+            }
+        };
+        reader.readAsText(file, 'UTF-8');
+        event.target.value = '';
+    }
+
+    function clearTxtMessage() {
+        document.getElementById('message').value = '';
+        document.getElementById('txtOptions').style.display = 'none';
+        document.getElementById('sendByLineMode').checked = false;
+        document.getElementById('totalLoops').value = 1;
+    }
+
+    // ==========================================
+    // 8. HYPER TURBO ENGINE (KHÔNG NGHẼN UI, KHÔNG THROTTLE)
+    // ==========================================
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.innerText = text;
+        return div.innerHTML;
+    }
+
+    function insertTag(tagText) {
+        const textarea = document.getElementById('message');
+        const start = textarea.selectionStart || 0;
+        const end = textarea.selectionEnd || 0;
+        const val = textarea.value;
+        textarea.value = val.slice(0, start) + tagText + val.slice(end);
+        textarea.focus();
+        textarea.setSelectionRange(start + tagText.length, start + tagText.length);
+    }
+
+    function formatMessageWithTag(msg, group, normalizedTag, numericUserId) {
+        let out = msg || '';
+        const groupLabel = group.name || group.id;
+
+        if (numericUserId) {
+            const idMentionHtml = `<a href="tg://user?id=${numericUserId}">${numericUserId}</a>`;
+            out = out
+                .replace(/\{uid\}/gi, numericUserId)
+                .replace(/\{userid\}/gi, numericUserId)
+                .replace(/\{user_id\}/gi, numericUserId)
+                .replace(/\{uid_link\}/gi, idMentionHtml);
+
+            if (!out.includes(numericUserId) && !normalizedTag) {
+                out = `${out} ${idMentionHtml}`.trim();
+            }
+        } else {
+            out = out
+                .replace(/\{uid\}/gi, '')
+                .replace(/\{userid\}/gi, '')
+                .replace(/\{user_id\}/gi, '')
+                .replace(/\{uid_link\}/gi, '');
+        }
+
+        if (normalizedTag) {
+            out = out.replace(/\{user\}/g, normalizedTag);
+            if (!out.includes('@')) {
+                out = `${out} ${normalizedTag}`.trim();
+            }
+        } else if (out.includes('{user}')) {
+            out = out.replace(/\{user\}/g, numericUserId || groupLabel);
+        }
+
+        out = out.replace(/\{id\}/g, group.id).replace(/\{group\}/g, groupLabel).trim();
+        return out;
+    }
+
+    // Precision sleep: dưới 15ms dùng MessageChannel (0ms thực, không bị trình duyệt kìm 4ms)
+    const fastChannel = typeof MessageChannel !== 'undefined' ? new MessageChannel() : null;
+    const fastCallbacks = [];
+    if (fastChannel) {
+        fastChannel.port1.onmessage = () => {
+            const fn = fastCallbacks.shift();
+            if (fn) fn();
+        };
+    }
+
+    function sleepUltraFast(ms) {
+        if (ms <= 0) {
+            if (fastChannel) {
+                return new Promise(resolve => {
+                    fastCallbacks.push(resolve);
+                    fastChannel.port2.postMessage(0);
+                });
+            }
+            return new Promise(resolve => queueMicrotask(resolve));
+        }
+        if (ms < 15 && typeof performance !== 'undefined') {
+            const start = performance.now();
+            return new Promise(resolve => {
+                function step() {
+                    if (performance.now() - start >= ms || stopRequested) {
+                        resolve();
+                    } else if (fastChannel) {
+                        fastCallbacks.push(step);
+                        fastChannel.port2.postMessage(0);
+                    } else {
+                        setTimeout(resolve, ms);
+                    }
+                }
+                step();
+            });
+        }
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function runWithConcurrencyLimit(taskFactories, limit) {
+        const safeLimit = Math.max(1, Math.min(limit || 30, 200));
+        let cursor = 0;
+        async function worker() {
+            while (!stopRequested) {
+                const idx = cursor++;
+                if (idx >= taskFactories.length) break;
+                try { await taskFactories[idx](); } catch (e) {}
+            }
+        }
+        const workers = Array.from({ length: Math.min(safeLimit, taskFactories.length) }, () => worker());
+        await Promise.all(workers);
+    }
+
+    function stopProcess() {
+        stopRequested = true;
+        showStatus('⏳ Đang dừng tiến trình...', 'loading');
+    }
+
+    // Batched UI Log để không làm lag/chậm luồng bắn tin tốc độ 0.01s
+    let deliveryStats = { total: 0, success: 0, error: 0, retry: 0 };
+    let pendingLogBuffer = [];
+    let hasLoggedAny = false;
+    let logFlushTimer = null;
+
+    function scheduleLogFlush() {
+        if (logFlushTimer) return;
+        logFlushTimer = setTimeout(() => {
+            logFlushTimer = null;
+            flushLogsToDOM();
+        }, 120);
+    }
+
+    function flushLogsToDOM() {
+        document.getElementById('logTotalCount').innerText = `Tổng: ${deliveryStats.total}`;
+        document.getElementById('logSuccessCount').innerText = `Thành công: ${deliveryStats.success}`;
+        document.getElementById('logErrorCount').innerText = `Lỗi: ${deliveryStats.error}`;
+        document.getElementById('logRetryCount').innerText = `429 Retry: ${deliveryStats.retry}`;
+
+        if (pendingLogBuffer.length === 0) return;
+        const container = document.getElementById('deliveryLogContainer');
+        if (!hasLoggedAny) {
+            container.innerHTML = '';
+            hasLoggedAny = true;
+        }
+
+        const frag = document.createDocumentFragment();
+        const batch = pendingLogBuffer.splice(0, 60);
+        batch.forEach(item => {
+            const row = document.createElement('div');
+            row.className = `log-entry log-${item.type}`;
+            row.innerText = `[${item.time}] ${item.text}`;
+            frag.appendChild(row);
+        });
+        container.insertBefore(frag, container.firstChild);
+
+        while (container.children.length > 120) {
+            container.removeChild(container.lastChild);
+        }
+    }
+
+    function appendDeliveryLog(type, text) {
+        const now = new Date().toLocaleTimeString('vi-VN', { hour12: false });
+        pendingLogBuffer.unshift({ type, text, time: now });
+        if (pendingLogBuffer.length > 200) pendingLogBuffer.length = 200;
+        scheduleLogFlush();
+    }
+
+    function clearDeliveryLog() {
+        deliveryStats = { total: 0, success: 0, error: 0, retry: 0 };
+        pendingLogBuffer = [];
+        hasLoggedAny = false;
+        document.getElementById('deliveryLogContainer').innerHTML =
+            '<div class="log-entry log-info">Đã xóa log. Sẵn sàng ghi nhận lượt gửi mới.</div>';
+        flushLogsToDOM();
+    }
+
+    async function sendFastRequestWithLog(groupObj, groupLabel, message, file, activeBots, tokenIndex = 0, attempt = 1) {
+        const chatId = typeof groupObj === 'string' ? groupObj : groupObj.id;
+        const botObj = activeBots[tokenIndex % activeBots.length];
+        const token = botObj.token;
+        const botLabel = botObj.username ? `@${botObj.username}` : (botObj.firstName || maskToken(token));
+        const maxRetries = Math.max(0, Math.min(parseInt(document.getElementById('maxRetriesInput').value, 10) || 0, 10));
+        const autoPause429 = document.getElementById('autoPause429').checked;
+        const autoSkipDeadGroup = document.getElementById('autoSkipDeadGroup').checked;
+
+        if (attempt === 1) {
+            deliveryStats.total += 1;
+            scheduleLogFlush();
+        }
+
+        try {
+            let res;
+            if (file) {
+                const formData = new FormData();
+                formData.append('chat_id', chatId);
+                formData.append('photo', file);
+                if (message) formData.append('caption', message);
+                formData.append('parse_mode', 'HTML');
+                res = await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
+                    method: 'POST',
+                    body: formData
+                });
+            } else {
+                res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ chat_id: chatId, text: message, parse_mode: 'HTML' })
+                });
+            }
+
+            let data = null;
+            try { data = await res.json(); } catch (e) {}
+
+            if (res.ok && data && data.ok) {
+                deliveryStats.success += 1;
+                if (dynamicPenaltyDelayMs > 0) dynamicPenaltyDelayMs = Math.max(0, dynamicPenaltyDelayMs - 20);
+                appendDeliveryLog('ok', `OK | ${botLabel} -> ${groupLabel} (${chatId})`);
+                return { ok: true };
+            }
+
+            const retryAfterSec = (data && data.parameters && Number(data.parameters.retry_after)) || (res.status === 429 ? 2 : 0);
+            if ((res.status === 429 || (data && data.error_code === 429)) && attempt <= maxRetries) {
+                deliveryStats.retry += 1;
+                const waitSec = Math.max(1, Math.min(retryAfterSec || 2, 15));
+                if (autoPause429) {
+                    dynamicPenaltyDelayMs = Math.min(1000, Math.max(dynamicPenaltyDelayMs + 80, 120));
+                }
+                appendDeliveryLog('retry', `429 | ${botLabel} -> ${groupLabel}: đổi bot & thử lại sau ${waitSec}s (${attempt}/${maxRetries})`);
+                await sleepUltraFast(waitSec * 1000);
+                return await sendFastRequestWithLog(groupObj, groupLabel, message, file, activeBots, tokenIndex + 1, attempt + 1);
+            }
+
+            const errCode = (data && data.error_code) || res.status || 'ERR';
+            const errDesc = (data && data.description) || res.statusText || 'Lỗi';
+
+            if (autoSkipDeadGroup && (errCode === 403 || errCode === 400) && typeof groupObj === 'object') {
+                groupObj.selected = false;
+                renderGroups();
+            }
+
+            deliveryStats.error += 1;
+            appendDeliveryLog('err', `LỖI ${errCode} | ${botLabel} -> ${groupLabel}: ${errDesc}`);
+            return { ok: false };
+        } catch (err) {
+            if (attempt <= maxRetries) {
+                deliveryStats.retry += 1;
+                await sleepUltraFast(250 * attempt);
+                return await sendFastRequestWithLog(groupObj, groupLabel, message, file, activeBots, tokenIndex + 1, attempt + 1);
+            }
+            deliveryStats.error += 1;
+            appendDeliveryLog('err', `LỖI MẠNG | ${botLabel} -> ${groupLabel}`);
+            return { ok: false };
+        }
+    }
+
+    async function handleStartProcess() {
+        const rawMessage = document.getElementById('message').value.trim();
+        const file = document.getElementById('imageFile').files[0];
+        const burstCount = Math.max(1, parseInt(document.getElementById('burstCount').value, 10) || 1);
+        const totalLoops = Math.max(1, parseInt(document.getElementById('totalLoops').value, 10) || 1);
+        const baseDelayMs = getDelayMsFromSeconds();
+        const maxConcurrency = Math.max(1, parseInt(document.getElementById('maxConcurrencyInput').value, 10) || 30);
+        const scheduleTimeVal = document.getElementById('scheduleTime').value;
+        const sendByLineMode = document.getElementById('sendByLineMode').checked;
+        const isHyperTurbo = document.getElementById('hyperTurboMode').checked;
+
+        if (!rawMessage && !file) {
+            showStatus('⚠️ Vui lòng nhập nội dung hoặc chọn ảnh!', 'error');
+            return;
+        }
+
+        const activeBots = getSelectedDispatchBots();
+        if (activeBots.length === 0) {
+            showStatus('⚠️ Vui lòng chọn ít nhất 1 bot đang sống ở tab Bot!', 'error');
+            return;
+        }
+
+        const targetGroups = groupList.filter(g => g.selected);
+        if (targetGroups.length === 0) {
+            showStatus('⚠️ Vui lòng chọn ít nhất 1 nhóm nhận tin ở tab Nhóm!', 'error');
+            return;
+        }
+
+        const rawUserId = document.getElementById('targetUserId').value.trim().replace(/\D/g, '');
+        const rawUserTag = document.getElementById('targetUsername').value.trim();
+        const normalizedTag = rawUserTag ? (rawUserTag.startsWith('@') ? rawUserTag : '@' + rawUserTag) : '';
+        const messageLines = rawMessage.split(/\r?\n/).map(l => l.trim()).filter(l => l !== '');
+
+        if (scheduleTimeVal) {
+            const delayStart = new Date(scheduleTimeVal).getTime() - Date.now();
+            if (delayStart <= 0) {
+                showStatus('⚠️ Thời gian hẹn giờ phải ở tương lai!', 'error');
+                return;
+            }
+            showStatus(`⏰ Hẹn giờ: Sẽ bắn tin sau ${Math.round(delayStart / 1000)} giây...`, 'loading');
+            await sleepUltraFast(delayStart);
+        }
+
+        stopRequested = false;
+        dynamicPenaltyDelayMs = 0;
+        document.getElementById('sendBtn').disabled = true;
+        document.getElementById('stopBtn').style.display = 'block';
+
+        const secLabel = document.getElementById('delaySec').value || '0';
+        const t0 = performance.now();
+        let globalShot = 0;
+
+        for (let currentLoop = 1; currentLoop <= totalLoops; currentLoop++) {
+            if (stopRequested) {
+                showStatus(`⛔ Đã dừng ở đợt ${currentLoop - 1}/${totalLoops}`, 'error');
+                break;
+            }
+
+            const currentGroups = groupList.filter(g => g.selected);
+            if (currentGroups.length === 0) break;
+
+            showStatus(`⚡ Đang bắn đợt ${currentLoop}/${totalLoops} • Speed ${secLabel}s • ${burstCount} tin/lần • ${currentGroups.length} nhóm...`, 'loading');
+
+            if (isHyperTurbo && baseDelayMs <= 30 && dynamicPenaltyDelayMs === 0) {
+                // Hyper Burst Mode: phóng toàn bộ loạt request đồng thời với nhịp nghỉ 0.01s/0.02s cực chuẩn
+                const promises = [];
+                for (let b = 0; b < burstCount; b++) {
+                    if (stopRequested) break;
+                    let msgForBurst = rawMessage || (rawUserId ? `ID: ${rawUserId}` : '');
+                    if (sendByLineMode && messageLines.length > 0) {
+                        msgForBurst = messageLines[(globalShot + b) % messageLines.length];
+                    }
+
+                    currentGroups.forEach((group, idx) => {
+                        const groupLabel = group.name || `Nhóm ${idx + 1}`;
+                        const personalizedMsg = formatMessageWithTag(msgForBurst, group, normalizedTag, rawUserId);
+                        promises.push(
+                            sendFastRequestWithLog(group, groupLabel, personalizedMsg, file, activeBots, globalShot + b + idx)
+                        );
+                    });
+
+                    if (b < burstCount - 1 && baseDelayMs > 0) {
+                        await sleepUltraFast(baseDelayMs);
+                    }
+                }
+                await Promise.allSettled(promises);
+            } else {
+                for (let b = 0; b < burstCount; b++) {
+                    if (stopRequested) break;
+                    let msgForBurst = rawMessage || (rawUserId ? `ID: ${rawUserId}` : '');
+                    if (sendByLineMode && messageLines.length > 0) {
+                        msgForBurst = messageLines[(globalShot + b) % messageLines.length];
+                    }
+
+                    const factories = currentGroups.map((group, idx) => {
+                        const groupLabel = group.name || `Nhóm ${idx + 1}`;
+                        const personalizedMsg = formatMessageWithTag(msgForBurst, group, normalizedTag, rawUserId);
+                        return () => sendFastRequestWithLog(group, groupLabel, personalizedMsg, file, activeBots, globalShot + b + idx);
+                    });
+
+                    await runWithConcurrencyLimit(factories, maxConcurrency);
+
+                    const stepDelay = baseDelayMs + dynamicPenaltyDelayMs;
+                    if (b < burstCount - 1 && !stopRequested && stepDelay > 0) {
+                        await sleepUltraFast(stepDelay);
+                    }
+                }
+            }
+
+            globalShot += burstCount;
+
+            if (currentLoop < totalLoops && !stopRequested) {
+                const loopDelay = baseDelayMs + dynamicPenaltyDelayMs;
+                if (loopDelay > 0) await sleepUltraFast(loopDelay);
+            } else if (currentLoop === totalLoops && !stopRequested) {
+                const elapsedSec = ((performance.now() - t0) / 1000).toFixed(2);
+                showStatus(`🎉 Bắn xong ${totalLoops} đợt (${totalLoops * burstCount} lượt/nhóm) trong ${elapsedSec}s!`, 'success');
+            }
+        }
+
+        flushLogsToDOM();
+        document.getElementById('sendBtn').disabled = false;
+        document.getElementById('stopBtn').style.display = 'none';
+    }
+
+    function showStatus(text, className) {
+        const statusDiv = document.getElementById('status');
+        statusDiv.style.display = 'block';
+        statusDiv.className = className;
+        statusDiv.innerText = text;
+    }
+</script>
+
+
+</div></body></html>
